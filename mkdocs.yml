@@ -1,3 +1,53 @@
-site_name: My Docs
+site_name: 老杜的笔记仓库
+site_url: https://metaldudu.github.io/docs
+site_author: MetalDudu
+site_description: 老杜的笔记仓库
+
+# [UI]
+## [top]
 theme:
   name: material
+  logo: assets/logo.png
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: slate # 夜间模式
+      primary: teal 
+      accent: deep orange # 链接等可交互元件的高亮色
+      toggle:
+        icon: material/lightbulb # 图标
+        name: 切换至日间模式 # 鼠标悬浮提示
+    - media: "(prefers-color-scheme: dark)"
+      scheme: default # 日间模式
+      primary: blue grey
+      accent: orange
+      toggle:
+        icon: material/lightbulb-outline
+        name: 切换至夜间模式
+  features:
+    - navigation.tabs # 使用Tab来进行分类
+    - navigation.sections
+    - navigation.top # 返回顶部的按钮 在上滑时出现
+    - navigation.indexes # Tab会有一个index.md 而不是在打开Tab时打开第一篇文章
+    #- navigation.expand # 打开Tab时左侧目录全部展开
+    - search.suggest # 搜索输入一些字母时推荐补全整个单词
+    - search.highlight # 搜索出的文章关键词加入高亮
+    - content.code.copy # 可以通过按钮复制代码
+  language: zh # 一些提示性的文字会变成中文
+  icon:
+    repo: fontawesome/brands/github
+
+## [bottom-right corner]
+extra:
+  social: # icons
+    - icon: simple/douban
+      link: https://www.douban.com/people/metaldudu
+    - icon: fontawesome/brands/mastodon
+      link: https://m.cmx.im/@metaldudu
+    - icon: fontawesome/brands/github
+      link: https://github.com/metaldudu
+
+# 导航
+
+
+
+# copy from https://github.com/Yang-Xijie/yang-xijie.github.io/blob/main/mkdocs.yml

@@ -7,10 +7,9 @@ date: 2022-11-01
 
 ## 工具
 
-- http://tinfoil.io/Download
-- https://github.com/julesontheroad/NSC_BUILDER
-- FFHOME NSGame Manager http://www.ffhome.com/works/1814.html
-- dbi https://github.com/rashevskyv/dbi/releases
+- [http://tinfoil.io/Download](http://tinfoil.io/Download)
+- [FFHOME NSGame Manager](http://www.ffhome.com/works/1814.html)
+- [dbi](https://github.com/rashevskyv/dbi/releases)
 - DBI使用方法：https://mp.weixin.qq.com/s/ghZraXqrrQuhj7Oi3ntjPA
 
 ## 转大气层
