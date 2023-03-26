@@ -8,30 +8,23 @@ date: 2022-09-03
 ## 课程
 
 - ESLPod，评价非常高的一套听说教程，有[转载](https://music.163.com/#/radio?id=1899015)，适合跟教材反复练习
-- ELLLO https://elllo.org/ 分级听力课程，以及音视频听力资料
+- ELLLO [https://elllo.org/](https://elllo.org/) 分级听力课程，以及音视频听力资料
 
 ## 泛听播客
 
-**VOA慢速英语**
-适合初学者的听力资料，有文本对照，适合入门。国内有转载，比如 https://www.51voa.com/
+- **VOA慢速英语** 适合初学者的听力资料，有文本对照，适合入门。国内有转载，比如 [https://www.51voa.com/](https://www.51voa.com/)
 
-**Learning English Broadcast -VOA Learning English**  https://learningenglish.voanews.com/z/1689
-这个播客是VOA的每日30分钟节目，语速比常速英语慢一点，词汇量较低，包含新闻和专题节目，适合泛听
+- [Learning English Broadcast -VOA Learning English](https://learningenglish.voanews.com/z/1689) 这个播客是VOA的每日30分钟节目，语速比常速英语慢一点，词汇量较低，包含新闻和专题节目，适合泛听
 
-**BBC Learning English** https://language.chinadaily.com.cn/bbc/
-BBC出品的学习内容，中国日报网站有同步版本，针对中国学习者
+- [BBC Learning English](https://language.chinadaily.com.cn/bbc/)  BBC出品的学习内容，中国日报网站有同步版本，针对中国学习者
 
-China Daily 英语新闻 
-RSS: https://rsshub.app/ximalaya/album/14804689/0/shownote
+- China Daily 英语新闻  [RSS](https://rsshub.app/ximalaya/album/14804689/0/shownote)
 
-**6 Minute English**
-BBC的新闻类节目，内容广泛，有问答环节和词汇整理
+- **6 Minute English** BBC的新闻类节目，内容广泛，有问答环节和词汇整理
 
-**Culips English Podcast** https://www.culips.com/
-适合外语学习者的播客，有会员内容。速度较慢，适合初学者泛听
+- **Culips English Podcast** [https://www.culips.com/](https://www.culips.com/) 适合外语学习者的播客，有会员内容。速度较慢，适合初学者泛听
 
-**开言英语：潘吉Jenny告诉你**
-一个文化类的英语学习播客，是付费课程的推广，但内容很丰富，经常跟一些热点介绍英文词汇和用法。免费。
+- **开言英语：潘吉Jenny告诉你** 一个文化类的英语学习播客，是付费课程的推广，但内容很丰富，经常跟一些热点介绍英文词汇和用法。免费。
 
 
 ## 有声读物
@@ -67,4 +60,4 @@ BBC的新闻类节目，内容广泛，有问答环节和词汇整理
 
 - [EnglishLessons4U - Learn English with Ronnie!](https://www.youtube.com/channel/UC4cmBAit8i_NJZE8qK8sfpA) youtube频道，语速较慢的一个加拿大老师
 - CrashCourse，youtube有名的知识视频，语速快
-- EnOnTV的分级阅读 level1-7 ，视频，b站和youtube，有文本。 https://www.bilibili.com/video/BV1SE411f7nc
+- EnOnTV的分级阅读 level1-7 ，视频，[b站](https://www.bilibili.com/video/BV1SE411f7nc)和youtube，有文本。 

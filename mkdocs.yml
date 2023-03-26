@@ -48,6 +48,108 @@ extra:
 
 # 导航
 
+nav:
+  #- index: index.md
+  - 游戏:
+    - index: GAME/index.md
+    - 喜欢的游戏: GAME/喜欢的游戏.md
+    - XBOX: GAME/XBOX.md
+    - NS: GAME/NS.md
+    - 在线小游戏: GAME/在线小游戏.md
+  - 技术:
+    - index: TECH/index.md
+    - Arch linux 笔记: TECH/archlinux.md
+    - CLI: TECH/cli.md
+    - kitty: TECH/kitty.md
+    - cmus: TECH/cmus.md
+    - Obsidian: TECH/obsidian.md
+    - vimwiki: TECH/vimwiki.md
+    - MkDocs生成网站: TECH/mkdocs.md
+    - NAS搭建笔记: TECH/nas.md
+    - GoldenDict: TECH/goldendict.md
+    - ffmpeg: TECH/ffmpeg.md
+    - Windows常用软件: TECH/win-software.md
+    - 安卓常用应用: TECH/android-app.md
+    - 小屏手机参数对比: TECH/small-screen-phones.md
+    - 影视资源管理: TECH/manage-downloaded-media.md
+    - 电子书资源管理: TECH/manage-downloaded-ebook.md
+    - 日常快捷键整理: TECH/hotkey-cheetsheet.md
+    - 极简启动器选择: TECH/minimalist-launchers.md
+    - 电脑文件整理的12个tips: TECH/12-tips-to-manage-files.md
+    - 传统颜色: TECH/tradition-color.md
+  - 阅读:
+    - index: READ/index.md
+    - 100本最佳侦探小说: READ/100本最佳侦探小说.md
+    - NEA票选100本儿童书: READ/NEA票选100本儿童书.md
+    - 亚马逊100本必读书: READ/亚马逊100本必读书.md
+    - 亚马逊100本童书: READ/亚马逊100本童书.md
+    - 十年阅读计划: READ/十年阅读计划.md
+    - 卡内基奖: READ/卡内基奖.md
+    - 纽伯瑞奖: READ/纽伯瑞奖.md
+  - 写作:
+    - index: WRITE/index.md
+    - 2015年写的小说: WRITE/2015.md
+    - 2016年写的小说: WRITE/2016.md
+    - 2017年写的小说: WRITE/2017.md
+  - 外语学习:
+    - index: LANG/index.md
+    - 英语听力资源: LANG/english-listening-resource.md
+    - LittleFox英语: LANG/little-fox.md
+    - 黑猫有声名著阶梯阅读: LANG/black-cat.md
+  - 资源:
+    - index: RES/index.md
+    - 中文歌曲节拍数: RES/chinese-song-bpm.md
+    - 免费字体: RES/free-fonts.md
+    - 在线免费好片: RES/online-free-movie.md
+    - 天干地支: RES/chinese-zodiac.md
+    - 物品购买收集: RES/things-to-buy.md
+    - 好习惯收集: RES/good-habits.md
+    - 影视下载网站: RES/movie-website.md
+    - 电子书下载网站: RES/ebook-website.md
+    - 网站搜罗: RES/more-websites.md
+  - 转载:
+    - index: REPOST/index.md
+    - 海明威谈写作: REPOST/海明威谈写作.md
+    - 我有一个同事: REPOST/我有一个同事.md
+    - 阿城《常识与通识》: REPOST/阿城《常识与通识》.md
+    - 五祖法演讲的禅宗故事: REPOST/五祖法演讲的禅宗故事.md
+    - 松尾芭蕉《古池》: REPOST/松尾芭蕉《古池》.md
+    - 大民大国40年40本书: REPOST/大民大国40年40本书.md
+    - 三个问题: REPOST/三个问题.md
+    - 乔布斯2005年在斯坦福大学的演讲: REPOST/乔布斯2005年在斯坦福大学的演讲.md
+    - 亚伦·斯沃茨-怎样有效利用时间: REPOST/亚伦·斯沃茨-怎样有效利用时间.md
+    - 余光中-怎样改进英式中文: REPOST/余光中-怎样改进英式中文.md
+    - 俞敏洪-度过有意义的生命: REPOST/俞敏洪-度过有意义的生命.md
+    - 兰迪波许最后的演讲: REPOST/兰迪波许最后的演讲.md
+    - 周保松-走进生命的学问: REPOST/周保松-走进生命的学问.md
+    - 宫泽贤治-不畏风雨: REPOST/宫泽贤治-不畏风雨.md
+    - 张五常-思考的方法: REPOST/张五常-思考的方法.md
+    - 德鲁克-管理自己: REPOST/德鲁克-管理自己.md
+    - 曾奇峰-我所犯过的错误: REPOST/曾奇峰-我所犯过的错误.md
+    - 查理·芒格-人类误判心理: REPOST/查理·芒格-人类误判心理.md
+    - 查理·芒格在南加州大学毕业典礼上的演讲: REPOST/查理·芒格在南加州大学毕业典礼上的演讲.md
+    - 没人懂某国: REPOST/没人懂某国.md
+    - 王小波-工作与人生: REPOST/王小波-工作与人生.md
+    - 王晓明-这样的人多了社会坏不到哪里去: REPOST/王晓明-这样的人多了社会坏不到哪里去.md
+    - 秦晖-30 年、60 年、120 年——中国历史的延续与断裂: REPOST/秦晖-30 年、60 年、120 年——中国历史的延续与断裂.md
+    - 秦晖-关于文革的若干问题: REPOST/秦晖-关于文革的若干问题.md
+    - 能量管理而非时间管理: REPOST/能量管理而非时间管理.md
+    - 艾柯-人类为什么爱清单: REPOST/艾柯-人类为什么爱清单.md
+    - 芒格-请先投资你自己: REPOST/芒格-请先投资你自己.md
+    - 茅于轼-教育的目的是什么: REPOST/茅于轼-教育的目的是什么.md
+    - 许章润-我们当下的恐惧与期待: REPOST/许章润-我们当下的恐惧与期待.md
+    - 贾樟柯-做了一个汉奸梦: REPOST/贾樟柯-做了一个汉奸梦.md
+    - 这鸡蛋真难吃: REPOST/这鸡蛋真难吃.md
+    - 何伟-“中国制造”外交的兴起: REPOST/何伟-“中国制造”外交的兴起.md
+    - 温家宝：我的母亲: REPOST/温家宝：我的母亲.md
+    - 劳东燕-直面真实的世界: REPOST/劳东燕-直面真实的世界.md
+    - 5-ways-to-simplify-your-life: REPOST/5-ways-to-simplify-your-life.md
+    - 爱丁堡笑话: REPOST/爱丁堡笑话.md
+    - 城市生存手记：一个波斯尼亚人的内战生活总结: REPOST/城市生存手记：一个波斯尼亚人的内战生活总结.md
+    - Luddite-Teens-Don't-Want-Your-Likes: REPOST/'Luddite'-Teens-Don't-Want-Your-Likes.md
+    - 吴敬琏：中国经济的未来方向: REPOST/吴敬琏：中国经济的未来方向.md
 
 
+
+# 
 # copy from https://github.com/Yang-Xijie/yang-xijie.github.io/blob/main/mkdocs.yml

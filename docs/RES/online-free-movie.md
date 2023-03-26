@@ -70,7 +70,7 @@ date: 2022-11-11
 - [花火](https://v.qq.com/x/cover/cdq1xvjttx3indt.html )
 - [东京奏鸣曲](https://v.qq.com/x/cover/xo1gt3zsqj31pys.html )
 
-## 其他国家)
+## 其他国家
 
 - [小萝莉的猴神大叔](https://www.bilibili.com/bangumi/play/ss33529/)
 - [起跑线](https://www.bilibili.com/bangumi/play/ss33424/)

@@ -3,37 +3,50 @@ title: CLI
 date: 2023-01-03
 ---
 
+# CLI 
+
+CLI（command-line interface，命令行界面），在命令行下面解决日常应用
+
+---
+
 ## 常用工具
 
 ### 显示主机信息
 
-neofetch [https://github.com/dylanaraps/neofetch](https://github.com/dylanaraps/neofetch)
+ [neofetch](https://github.com/dylanaraps/neofetch)，以及 [pfetch](https://github.com/dylanaraps/pfetch)
 
 ### 显示天气
 
-ansiweather [https://github.com/fcambus/ansiweather](https://github.com/fcambus/ansiweather)
+[ansiweather](https://github.com/fcambus/ansiweather)，或者使用 curl ：
+
+`curl wttr.in/shijiazhuang`
 
 ### 显示时钟
 
-tty-clock，大字体、多种颜色 [https://github.com/xorg62/tty-clock](https://github.com/xorg62/tty-clock)
+[tty-clock]((https://github.com/xorg62/tty-clock))，大字体、多种颜色
 
 ### 显示音乐波动
 
-cava [https://github.com/karlstav/cava](https://github.com/karlstav/cava)
+[cava](https://github.com/karlstav/cava)
 
 ### 词典
 
-cambrinary，查询剑桥在线词典 [https://github.com/xueyuanl/cambrinary](https://github.com/xueyuanl/cambrinary)
+[cambrinary](https://github.com/xueyuanl/cambrinary) ，查询剑桥在线词典 
+
+`cambrinary -w hello`
 
 ### RSS阅读器
 
 newsboat [https://github.com/newsboat/newsboat](https://github.com/newsboat/newsboat)
 
-## 音乐
+## 多媒体
+
+### 音乐播放
 
 cmus [https://github.com/cmus/cmus](https://github.com/cmus/cmus)
 
-### 音乐转换处理
+
+## 音乐转换处理
 
 参考[wiki](https://wiki.archlinux.org/title/CUE_Splitting) ，安装 shntool `yay -S shntool`
 
@@ -43,7 +56,7 @@ cmus [https://github.com/cmus/cmus](https://github.com/cmus/cmus)
 
 如果操作ape文件需要装 mac `yay -S mac`
 
-## 重命名
+## 文件重命名
 
 ### rename重命名
 
