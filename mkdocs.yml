@@ -50,12 +50,17 @@ extra:
 
 nav:
   #- index: index.md
-  - 游戏:
-    - index: GAME/index.md
-    - 喜欢的游戏: GAME/喜欢的游戏.md
-    - XBOX: GAME/XBOX.md
-    - NS: GAME/NS.md
-    - 在线小游戏: GAME/在线小游戏.md
+  - 知识:
+    - index: K/index.md
+    - 我喜欢的TED演讲: K/fav-ted-talks.md
+    - 笔记:
+      - Learning How To Learn: K/NOTE/learning-how-to-learn.md
+      - 公正: K/NOTE/justice.md
+      - 可汗学院欧洲史: K/NOTE/europe-history.md
+      - 游戏心理学: K/NOTE/game-psychology.md
+      - 坛经: K/NOTE/tan-jing.md
+      - 名人与现代中国: K/NOTE/celebrity-and-morden-china.md
+      - 世界华文文学经典欣赏: K/NOTE/chinese-novel.md
   - 技术:
     - index: TECH/index.md
     - Arch linux 笔记: TECH/archlinux.md
@@ -79,13 +84,20 @@ nav:
     - 传统颜色: TECH/tradition-color.md
   - 阅读:
     - index: READ/index.md
-    - 100本最佳侦探小说: READ/100本最佳侦探小说.md
-    - NEA票选100本儿童书: READ/NEA票选100本儿童书.md
-    - 亚马逊100本必读书: READ/亚马逊100本必读书.md
-    - 亚马逊100本童书: READ/亚马逊100本童书.md
     - 十年阅读计划: READ/十年阅读计划.md
-    - 卡内基奖: READ/卡内基奖.md
-    - 纽伯瑞奖: READ/纽伯瑞奖.md
+    - 书单:
+      - 100本最佳侦探小说: READ/LIST/100本最佳侦探小说.md
+      - NEA票选100本儿童书: READ/LIST/NEA票选100本儿童书.md
+      - 亚马逊100本必读书: READ/LIST/亚马逊100本必读书.md
+      - 亚马逊100本童书: READ/LIST/亚马逊100本童书.md
+      - 卡内基奖: READ/LIST/卡内基奖.md
+      - 纽伯瑞奖: READ/LIST/纽伯瑞奖.md
+      - 大民大国40年40本书: READ/LIST/大民大国40年40本书.md
+    - 作家:
+      - 作家-劳伦斯・布洛克: READ/WRITER/作家-劳伦斯・布洛克.md
+      - 作家-格雷厄姆·格林: READ/WRITER/作家-格雷厄姆·格林.md
+      - 作家-横山秀夫: READ/WRITER/作家-横山秀夫.md
+
   - 写作:
     - index: WRITE/index.md
     - 2015年写的小说: WRITE/2015.md
@@ -107,6 +119,18 @@ nav:
     - 影视下载网站: RES/movie-website.md
     - 电子书下载网站: RES/ebook-website.md
     - 网站搜罗: RES/more-websites.md
+  - 娱乐:
+    - index: FUN/index.md
+    - 电影:
+      - 伊斯特伍德: FUN/MOVIE/伊斯特伍德.md
+      - 库布里克: FUN/MOVIE/库布里克.md
+      - 查理·考夫曼: FUN/MOVIE/查理·考夫曼.md
+      - 比利·怀德: FUN/MOVIE/比利·怀德.md
+    - 游戏:
+      - 喜欢的游戏: FUN/GAME/喜欢的游戏.md
+      - XBOX: FUN/GAME/XBOX.md
+      - NS: FUN/GAME/NS.md
+      - 在线小游戏: FUN/GAME/在线小游戏.md
   - 转载:
     - index: REPOST/index.md
     - 海明威谈写作: REPOST/海明威谈写作.md
@@ -114,7 +138,6 @@ nav:
     - 阿城《常识与通识》: REPOST/阿城《常识与通识》.md
     - 五祖法演讲的禅宗故事: REPOST/五祖法演讲的禅宗故事.md
     - 松尾芭蕉《古池》: REPOST/松尾芭蕉《古池》.md
-    - 大民大国40年40本书: REPOST/大民大国40年40本书.md
     - 三个问题: REPOST/三个问题.md
     - 乔布斯2005年在斯坦福大学的演讲: REPOST/乔布斯2005年在斯坦福大学的演讲.md
     - 亚伦·斯沃茨-怎样有效利用时间: REPOST/亚伦·斯沃茨-怎样有效利用时间.md
@@ -148,6 +171,7 @@ nav:
     - 城市生存手记：一个波斯尼亚人的内战生活总结: REPOST/城市生存手记：一个波斯尼亚人的内战生活总结.md
     - Luddite-Teens-Don't-Want-Your-Likes: REPOST/'Luddite'-Teens-Don't-Want-Your-Likes.md
     - 吴敬琏：中国经济的未来方向: REPOST/吴敬琏：中国经济的未来方向.md
+    - 苏联笑话: REPOST/苏联笑话.md
 
 
 
