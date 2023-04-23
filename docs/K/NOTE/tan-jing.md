@@ -2,7 +2,7 @@
 
 category: 视频学习笔记
 author: 杜小安
-tag: 
+tag: #佛教 
 create: 2021-10-25
 update: 2021-10-25
 

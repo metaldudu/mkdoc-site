@@ -30,6 +30,7 @@ date: 2022-12-04
 - EpubSplit - 分割epub电子书，适合对合集电子书拆分
 - Find Duplicate - 清理重复电子书
 - DeDRM - 移除DRM（数字版权保护），购买正版书后可以去除保护并编辑修改
+- [fugary/calibre-douban](https://github.com/fugary/calibre-douban) 豆瓣数据源支持
 
 ### calibre-web
 

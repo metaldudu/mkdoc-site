@@ -29,3 +29,12 @@ playqueue 模式：队列模式更方便，想要听的曲子，选择后按 e/E
 
 更多操作可以在模式7查看，或者 `man cmus` 。总之稍有学习成本，但整理好曲库和 playlist ，就快的飞起。
 
+---
+
+### 更改主题
+
+下载主题文件到 `~/.config/cmus/` ，使用命令启用，比如：
+
+`:colorscheme gruvbox-night`
+
+主题文件可以自定义（[官方说明](https://github.com/cmus/cmus/wiki/themes)），或者下载[别人整理的](https://github.com/johnnymatthews/cmus-themes)

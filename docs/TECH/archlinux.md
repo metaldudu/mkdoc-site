@@ -13,17 +13,42 @@ date: 2022-12-04
 - 命令行状态下要装好网络包
 - 自动挂载移动硬盘和U盘，安装 `ntfs-3g udevil` ，同时当前用户要增加权限。解决弹出提示输入密码的问题：[链接](https://askubuntu.com/questions/552503/stop-asking-for-authentication-to-mount-usb-stick)
 
+## 系统更新
+
 ### mirrors
 
 编辑：`/etc/pacman.d/mirrorlist`
 
 生成地址： [https://archlinux.org/mirrorlist/](https://archlinux.org/mirrorlist/)
 
+### pacman错误
+
+invalid pgp key错误解决 : `$ sudo pacman-key --refresh-keys`
+
+pacman -Syu 升级系统
+pacman -Syy 同步软件列表
+pacman -Scc 清理软件包
+pacman -S xxx 安装
+pacman -Ss xxx 查询
+pacman -R xxx 卸载
+pacman -Qs xxx 查询已安装包
+
 ### yay
 
 `yay -Ps`    现状展示
 `yay -Qu` 查看待升级的包
 `yay -Sc`    清理
+
+## xfce4系统设置
+
+### 显示
+
+使用2k显示器开缩放会很大，可以调整系统字体从 96 到144（1.5倍）：Settings - Appearance - Fonts - DPI 
+
+
+### 网络
+
+查询本机ip： `$curl ipinfo.io`
 
 ### 字体
 
@@ -45,7 +70,6 @@ date: 2022-12-04
 - [霞鹜文楷](https://github.com/lxgw/LxgwWenKai)（免费）
 - 仓耳今楷（个人非商用免费）
 - 方正屏显雅宋（付费，屏幕显示优化）
-- 方正宋刻本秀楷
 
 ### XFCE4桌面
 
@@ -66,13 +90,12 @@ date: 2022-12-04
 
 `xfwm4 --replace &`
 
+任务栏靠左后，可以设置时钟显示，参考[这里]()
+
 ### 图标
 
 所有的图标在：`/usr/share/icons/`
 
-###  网络
-
-查询本机ip： `$curl ipinfo.io`
 
 ### terminal使用代理
 
@@ -92,18 +115,25 @@ aliass ip="curl ipinfo.io"
 
 解压缩：File Roller ，文件搜索：catfish 。访问共享，安装 `gvfs-smb`
 
-### 浏览器
 
-Firefox 主力可同步，Chrome 备用
 
-Firefox 自定义布局： https://github.com/Dook97/firefox-qutebrowser-userchrome
+
+## 编辑器
+
+Typora 收费后，直接全部用 Obsidian 解决笔记问题，markdown无敌。Code-OSS 编辑多个文件，单个文件用系统自带的 mousepad 打开。LibreOffice 或者用腾讯在线文档对付 msoffice 格式。
+
+`sudo pacman -S libreoffice-still libreoffice-still-zh-cn`
+
+## 外语学习
+
+GoldenDict 和 anki 装好每天都用
 
 ### 输入法
 
 选择 fcitx5 和 rime ，使用：
 
-- 四叶草拼音方案 https://github.com/fkxxyz/rime-cloverpinyin
-- 皮肤 https://github.com/hosxy/Fcitx5-Material-Color 修改成了#666666 灰色
+- 四叶草拼音方案 https://github.com/fkxxyz/rime-cloverpinyin 不喜欢四叶草图标，可以修改 `~.local/share/fcitx5/rime/build/clover.schema.yaml` 文件里的 🍀 为其他字符，比如 🐼
+- 自己修改了一份皮肤 [metaldudu/fcitx5-simple-white-theme](https://github.com/metaldudu/fcitx5-simple-white-theme)
 
 比起默认的拼音更适合简体中文用户。一些快捷键：
 
@@ -113,13 +143,15 @@ Firefox 自定义布局： https://github.com/Dook97/firefox-qutebrowser-userchr
 
 ### 图片
 
-编辑器用 GIMP，用惯了也还好。看图用 ristretto ，看漫画可以用 MComix 或 Foliate。截图用火焰截图 [Flameshot](https://github.com/lupoDharkael/flameshot) ，截图可以绑定快捷键到 `flameshot gui`
+编辑器用 GIMP，用惯了也还好。看图用 ristretto ，看漫画可以用 MComix 或 Foliate。截图用火焰截图 [Flameshot](https://github.com/lupoDharkael/flameshot) ，截图可以绑定快捷键到 `flameshot gui` 
 
-### 影音
+延时6秒截图命令： `flameshot gui -d 6000`
 
-MPV 主力播放， VLC 可以看网络直播流，也适合播放整个文件夹。音乐播放用 Audacious ，需要编辑音乐信息装一个 Kid3。听在线音乐可以用 [Listen 1 音乐播放器](https://listen1.github.io/listen1/) 。录音用 yAudacity。
+## 影音
 
-VLC可以批量转换音频视频，也可以订阅 podcast
+- MPV 主力播放。 VLC 可以看网络直播流，也适合播放整个文件夹，VLC可以批量转换音频视频，也可以订阅 podcast
+- 音乐播放用 Audacious ，需要编辑音乐信息装一个 Kid3。听在线音乐可以用 [Listen 1 音乐播放器](https://listen1.github.io/listen1/) 。
+- 录音用  Audacity
 
 #### mpv显示两个字幕
 
@@ -151,12 +183,20 @@ pdf浏览就装 Evince ，图形化的PDF剪裁工具 [krop](http://arminstraub.
 - 拆分pdf  `qpdf --empty --pages infile.pdf 1-5 -- outfile.pdf`
 - 拆分pdf的简单方法是用内置pdf浏览器打印到pdf文件！
 
-### 编辑器
 
-Typora 收费后，直接全部用 Obsidian 解决笔记问题，markdown无敌。Code-OSS 编辑多个文件，单个文件用系统自带的 mousepad 打开。LibreOffice 或者用腾讯在线文档对付 msoffice 格式。
 
-`sudo pacman -S libreoffice-still libreoffice-still-zh-cn`
+## 网络软件
 
+
+### 浏览器
+
+Firefox 主力可同步，Chrome 备用
+
+#### 浏览器无法打开telegram 链接
+
+`~/.local/share/applications` 找到 userapp-Telegram Desktop-xxxx.desktop ,在文件的最后添加一行：
+
+`MimeType=application/x-xdg-protocol-tg;x-scheme-handler/tg;`
 
 ### RSS
 
@@ -188,10 +228,6 @@ wget  / [lux-dl](https://github.com/iawia002/lux) / youtube-dl / qbittorrent  / 
 - 加入服务： `sudo systemctl enable syncthing@laodu.service`
 - 启动服务： `sudo systemctl start syncthing@laodu.service`
 
-### 外语学习
-
-GoldenDict 和 anki 装好每天都用
-
 ### SSH and git
 
 - 安装 openssh git
@@ -202,31 +238,13 @@ GoldenDict 和 anki 装好每天都用
 
 ### 其他问题
 
-#### 浏览器无法打开telegram 链接
-
-`~/.local/share/applications` 找到 userapp-Telegram Desktop-xxxx.desktop ,在文件的最后添加一行：
-
-`MimeType=application/x-xdg-protocol-tg;x-scheme-handler/tg;`
-
-#### pacman错误
-
-invalid pgp key错误解决 : `$ sudo pacman-key --refresh-keys`
-
-pacman -Syu 升级系统
-pacman -Syy 同步软件列表
-pacman -Scc 清理软件包
-pacman -S xxx 安装
-pacman -Ss xxx 查询
-pacman -R xxx 卸载
-pacman -Qs xxx 查询已安装包
-
 #### 环境变量
 
 编辑 `~/.bashrc`，加入
 
 `export PATH=$PATH:/somepath`
 
-#### 电源
+#### 电源休眠
 
 编辑： /etc/systemd/logind.conf 加入以下两行，实现笔记本合盖挂起系统：
 

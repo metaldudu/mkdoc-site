@@ -155,6 +155,7 @@ date: 2022-11-11
 
 - HTML Color Codes https://htmlcolorcodes.com/
 - [zhongguose － 传统颜色](http://zhongguose.com/)
+- 灰度颜色 [https://calcolor.co/palette/942409461](https://calcolor.co/palette/942409461)
 
 ### 图库
 
@@ -171,6 +172,10 @@ date: 2022-11-11
 - 中国老照片 [Welcome | Historical Photographs of China](https://www.hpcbristol.net/)
 - 世界名画 [Interactive Fine Art Gallery & Museum USEUM](https://useum.org/)
 - 书封面收藏 [http://bookcoverarchive.com/](http://bookcoverarchive.com/)
+
+### 博物馆
+
+- 全景故宫 [https://pano.dpm.org.cn/](https://pano.dpm.org.cn/)
 
 ### 字体
 

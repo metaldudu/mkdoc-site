@@ -23,7 +23,7 @@ CLI（command-line interface，命令行界面），在命令行下面解决日�
 
 ### 显示时钟
 
-[tty-clock]((https://github.com/xorg62/tty-clock))，大字体、多种颜色
+[tty-clock](https://github.com/xorg62/tty-clock)，大字体、多种颜色
 
 ### 显示音乐波动
 
@@ -76,3 +76,7 @@ perl版本的rename 支持正则匹配，C版本不行
 
 `for f in *; do mv -i "$f" "${f// /.}"; done`
 
+
+## 娱乐
+
+俄罗斯方块： ctris
