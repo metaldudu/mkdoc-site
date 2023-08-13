@@ -56,6 +56,7 @@ date: 2022-11-11
 ## 在线工具
 
 - 在线绘图 [https://app.diagrams.net/](https://app.diagrams.net/)
+- 在线海报 [https://www.canva.com/](https://www.canva.com/create/posters/)
 - github文件下载 https://d.serctl.com/
 - 文件格式转换 https://icones.js.org/
 - pdf工具 https://smallpdf.com/pdf-tools
@@ -179,6 +180,7 @@ date: 2022-11-11
 
 ### 字体
 
+- [找字体_ZFont.Cn](https://zfont.cn/) 免费商用中文字体
 - [Source Han Sans  思源黑体](https://github.com/adobe-fonts/source-han-sans)
 - [仓耳字库](http://tsanger.cn/product)
 

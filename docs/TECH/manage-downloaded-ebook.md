@@ -24,6 +24,14 @@ date: 2022-12-04
 
 - 首选项-界面外观-书籍详情：修改【点击作者的名字将会】为【使用自定义搜索网址】，下面填写 `https://search.douban.com/book/subject_search?search_text={author}` 在主界面点击作者名字会跳转到豆瓣搜索该作者
 - 首选项-界面外观-栏目配色：可以设置规则改变栏目颜色，比如历史书改为褐色字
+- 修正kindle页边距过大：在 转换书籍 -  界面外观 - 样式 ，加入：
+
+```
+html {
+margin-left: -50px;
+margin-right: -50px;
+}
+```
 
 ### 插件
 

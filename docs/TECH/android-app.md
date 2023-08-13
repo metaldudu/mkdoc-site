@@ -57,7 +57,7 @@ date: 2022-12-04
 ## 视频
 
 - VLC : 支持多种格式播放
-- bilibili：谷歌版无广告
+- [BBLL](https://github.com/xiaye13579/BBLL) : 第三方b站客户端
 - [NewPipe](https://newpipe.net/) : 开源第三方油管客户端
 
 ## Podcast

@@ -1,6 +1,6 @@
 ---
 title: 影视下载网站
-date: 2022-12-04
+date: 2023-06-10
 ---
 
 # 影视下载网站
@@ -13,7 +13,7 @@ date: 2022-12-04
 
 ## BT
 
-- [RARBG](https://rarbgprx.org/) [https://rarbgmirror.com/](https://rarbgmirror.com/)
+-  RARBG [Backup of magnets from RARBG](https://github.com/2004content/rarbg) [mirror]([https://www2.rarbggo.to/movies/](https://www2.rarbggo.to/movies/))
 - [piratebay](https://piratebay.live/)
 - https://yts.mx/
 - https://1337x.to/
@@ -43,9 +43,9 @@ date: 2022-12-04
 - 美剧天堂 - [https://www.meijutt.tv/](https://www.meijutt.tv/)
 - 比特影视 [https://www.bteye.com/](https://www.bteye.com/)
 - 人人影视分享 [https://yyets.dmesg.app/home](https://yyets.dmesg.app/home)
-- 钛影视 - [http://www.taiyingshi.vip/](http://www.taiyingshi.vip/)
+- 阳光影视 - [https://dy.ygdy8.com/](https://dy.ygdy8.com/)
 - ⾳范丝 [https://www.yinfans.net/](https://www.yinfans.net/)
-- yyds https://yyds.fans/
+- yyds [https://yyds.fans/](https://yyds.fans/)
 
 ##  动漫
 
@@ -69,3 +69,4 @@ date: 2022-12-04
 - 冰冰字幕组 [https://www.icezmz.com/](https://www.icezmz.com/)
 - 诸神字幕组 [https://subs.kamigami.org/](https://subs.kamigami.org/)
 - 追新番 [http://fanxinzhui.com/](http://fanxinzhui.com/)
+- [弯弯字幕组](https://wanwansub.com/products)

@@ -1,6 +1,6 @@
 ---
 title: 在线免费好电影
-date: 2022-11-11
+date: 2023-08-11
 ---
 
 # 在线免费好电影
@@ -106,3 +106,28 @@ date: 2022-11-11
 - [但是还有书籍](https://www.bilibili.com/bangumi/play/ss27249)
 - [但是还有书籍 第2季](https://www.bilibili.com/bangumi/play/ss38597)
 - [未至之境](https://www.bilibili.com/bangumi/play/ss33681)
+
+
+
+## 一些孩子看的纪录片
+
+
+- 化学：门捷列夫很忙（央视6集） https://tv.cctv.com/2020/06/30/VIDEW2RsCO2IJILmB7VB35Im200630.shtml
+- 物理：我的牛顿教练（央视6集） https://tv.cctv.com/2018/06/26/VIDAAg8W6IxzkfUGlpl7CbsF180626.shtml
+- 历史：历史那些事（8集） https://open.163.com/newview/movie/free?pid=MEK088GG1&mid=MEK0K6TBV
+- 历史：海昏侯（央视3集）
+- 历史： 不止考古·我与三星堆 (2022) （5集） https://www.bilibili.com/video/BV1p24y1P774
+- 地理：河西走廊（央视10集） https://www.bilibili.com/video/BV19f4y157oq 
+- 文化：跟着唐诗去旅行（5集） http://tv.cctv.com/2019/11/18/VIDA1ouSngMOjLXtbLWoMBNm191118.shtml
+- 文化：但是还有书籍 https://www.bilibili.com/bangumi/play/ss27249
+- 文化：中国唱诗班（6集） https://www.bilibili.com/video/BV1Fm4y1C7JV/
+- 文化：唐之韵（20集） https://www.bilibili.com/video/BV118411e7VU
+- 地理：美丽中国 Wild China  https://tv.cctv.com/2012/12/10/VIDA1355117645556909.shtml
+- 社会：无穷之路（12集） https://tv.cctv.cn/2022/12/13/VIDEN3eSesW3KdY0yXC5IgZj221213.shtml
+- 社会： 人生第一次 (2020) （12集） https://www.bilibili.com/bangumi/play/ep310493
+- 自然： 众神之地 (2022) 
+- 我在故宫修文物 http://tv.cctv.com/2015/12/30/VIDA1451462807578701.shtml
+- 科学人物：经典天才争霸战（8集） https://www.bilibili.com/video/BV1xs411k7DF
+- 历史：枪炮病菌与钢铁（3集） https://www.bilibili.com/video/BV1584y11719
+- 自然： 猎捕 The Hunt (2015)  （BBC 7集）
+- 科学： 宇宙时空之旅 https://www.bilibili.com/video/BV1YP4y1h7QJ

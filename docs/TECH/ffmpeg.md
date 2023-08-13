@@ -1,4 +1,3 @@
-# ffmpeg
 
 参考：[ffmpeg 入门笔记](http://einverne.github.io/post/2015/12/ffmpeg-first.html)
 
@@ -9,7 +8,9 @@ ffmpeg -i "1.webm" -vn -ab 128k -ar 44100 -y "1.mp3"
 
 下载HLS在线视频： `ffmpeg -i "https://www3.yuboyun.com/hls/2018/11/05/KCEwXYoY/playlist.m3u8" -codec copy 1.ts `
 
-b站flv转mp4：`ffmpeg -i S02E06.flv -c copy -copyts S02E06.mp4`
+###  b站flv转mp4
+
+`ffmpeg -i S02E06.flv -c copy -copyts S02E06.mp4`
 
 
 ## 合并mp4
@@ -41,19 +42,26 @@ ffmpeg -i animation.gif -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw
 
 参数应该是强制mp4的压缩格式、画面比例
 
-##  m4a/webm to mp3
+###  m4a/webm to mp3
 
 ffmpeg -i input.m4a -c:v copy -c:a libmp3lame -q:a 4 output.mp3
 
 ffmpeg -i input.webm -c:v copy -c:a libmp3lame -q:a 4 output.mp3
 
-ffmpeg -i input.mp4 -c:v copy -c:a libmp3lame -q:a 4 output.mp3
+ffmpeg -i in.mp4 -c:v copy -c:a libmp3lame -q:a 4 out.mp3
 
-wav to mp3
+### wav to mp3
 
 ````
 ffmpeg -i input.wav -vn -ar 44100 -ac 2 -b:a 192k output.mp3
 ````
+
+### wav to flac
+
+```
+ffmpeg -i in.wav -af aformat=s32:176000 out.flac
+```
+
 
 ## 添加硬字幕
 
@@ -81,3 +89,9 @@ done
 $ mkdir newfiles
 $ for f in *.m4a; do ffmpeg -i "$f" -codec:v copy -codec:a libmp3lame -q:a 2 newfiles/"${f%.m4a}.mp3"; done
 ```
+
+
+## 下载m3u
+
+ffmpeg -headers "referer: https://emturbovid.com/" -i <url> -c copy -bsf:a aac_adtstoasc output_file.mp4
+

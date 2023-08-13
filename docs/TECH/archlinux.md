@@ -5,13 +5,18 @@ date: 2022-12-04
 
 # Arch linux 笔记
 
-### 系统安装
+## 系统安装
 
 按照wiki走一遍，不行就再来一遍。有可能踩坑：
 
 - 和win10共享ESP分区的话，100Mb 不够用，而且win10更新会导致 grub 错误。建议扩大 ESP 分区
 - 命令行状态下要装好网络包
 - 自动挂载移动硬盘和U盘，安装 `ntfs-3g udevil` ，同时当前用户要增加权限。解决弹出提示输入密码的问题：[链接](https://askubuntu.com/questions/552503/stop-asking-for-authentication-to-mount-usb-stick)
+
+
+## 网络
+
+查询本机ip： `$curl ipinfo.io`
 
 ## 系统更新
 
@@ -31,7 +36,10 @@ pacman -Scc 清理软件包
 pacman -S xxx 安装
 pacman -Ss xxx 查询
 pacman -R xxx 卸载
+pacman -Rs xxx 卸载包以及依赖包
+pacman -Rns xxx 删除包且删除配置文件
 pacman -Qs xxx 查询已安装包
+pacman -R $(sudo pacman -Qdtq) 删除孤儿包
 
 ### yay
 
@@ -39,16 +47,33 @@ pacman -Qs xxx 查询已安装包
 `yay -Qu` 查看待升级的包
 `yay -Sc`    清理
 
-## xfce4系统设置
+## xfce4设置
 
 ### 显示
 
-使用2k显示器开缩放会很大，可以调整系统字体从 96 到144（1.5倍）：Settings - Appearance - Fonts - DPI 
+使用2k显示器开缩放会很大，可以调整 Settings - Appearance - Fonts - DPI 到130左右
 
+### 主题
 
-### 网络
+使用暗色主题：`pacman -S arc-gtk-theme` ，图标选择： papirus-icon-theme 。所有的图标在：`/usr/share/icons/` 修改文件夹颜色 [papirus-folders](https://github.com/PapirusDevelopmentTeam/papirus-folders)
 
-查询本机ip： `$curl ipinfo.io`
+### 壁纸
+
+壁纸位置在：~/.local/share/xfce4/backdrops/
+
+### 面板
+
+- 声音：安装 alsa-utils 和  pulseaudio。安装　`xfce4-pulseaudio-plugin` ，面板添加音量图标
+- 任务栏靠左后，可以设置时钟显示，参考[这里]() 
+- 系统栏图标大小不合适，参考[这里](https://bbs.archlinux.org/viewtopic.php?id=222292)
+- 【故障】桌面窗口标题栏消失，无法拖动和改变大小，或者面板消失。解决方法：`xfwm4 --replace &`
+
+### 快捷键
+
+- 窗口靠边：win+方向键
+- 隐藏所有窗口：win+D
+- 启动器，使用  [Ulauncher](https://github.com/Ulauncher/) ：win+~
+- 截图，使用 Flameshot ：`flameshot gui > win+3`
 
 ### 字体
 
@@ -67,68 +92,13 @@ pacman -Qs xxx 查询已安装包
 
 适合阅读和电纸书的字体
 
-- [霞鹜文楷](https://github.com/lxgw/LxgwWenKai)（免费）
-- 仓耳今楷（个人非商用免费）
-- 方正屏显雅宋（付费，屏幕显示优化）
+- [霞鹜文楷](https://github.com/lxgw/LxgwWenKai)（免费）选择 霞鹜文楷屏幕阅读版
+- 方正屏显雅宋（付费，屏幕显示优化） FZPingXYSK.TTF
+- 方正宋刻本秀楷简体 
+- 筑紫明朝体，适合繁体字
+- 京華老宋体
 
-### XFCE4桌面
-
-声音：安装 alsa-utils 和  pulseaudio。安装　`xfce4-pulseaudio-plugin` ，面板添加音量图标。
-
-主题： arc-gtk-theme 图标： papirus-icon-theme
-
-配置桌面快捷键：
-
-- 窗口靠边：win+方向键
-- 隐藏所有窗口：win+D
-- 启动器：win+~
-- 截图：`flameshot gui > win+3`
-
-壁纸位置在：~/.local/share/xfce4/backdrops/
-
-【故障】桌面窗口标题栏消失，无法拖动和改变大小，或者面板消失。解决方法：
-
-`xfwm4 --replace &`
-
-任务栏靠左后，可以设置时钟显示，参考[这里]()
-
-### 图标
-
-所有的图标在：`/usr/share/icons/`
-
-
-### terminal使用代理
-
-```
-alias setproxy="export ALL_PROXY=socks5://127.0.0.1:1080"
-alias unsetproxy="unset ALL_PROXY"
-aliass ip="curl ipinfo.io"
-```
-
-### 启动器
-
-[Uluancher](https://ulauncher.io/)，简单高效。无论用哪个平台都应该又一款趁手的启动器。
-
-支持使用 `goldendict $1` 来调用 goldendict 查词
-
-### 文件管理
-
-解压缩：File Roller ，文件搜索：catfish 。访问共享，安装 `gvfs-smb`
-
-
-
-
-## 编辑器
-
-Typora 收费后，直接全部用 Obsidian 解决笔记问题，markdown无敌。Code-OSS 编辑多个文件，单个文件用系统自带的 mousepad 打开。LibreOffice 或者用腾讯在线文档对付 msoffice 格式。
-
-`sudo pacman -S libreoffice-still libreoffice-still-zh-cn`
-
-## 外语学习
-
-GoldenDict 和 anki 装好每天都用
-
-### 输入法
+## 输入法
 
 选择 fcitx5 和 rime ，使用：
 
@@ -141,13 +111,46 @@ GoldenDict 和 anki 装好每天都用
 - shift+空格 切换全角/半角
 - ctrl+shift+3 切换emoji
 
+## 软件
+
+### 代理
+
+terminal使用代理
+
+```
+alias setproxy="export ALL_PROXY=socks5://127.0.0.1:1080"
+alias unsetproxy="unset ALL_PROXY"
+aliass ip="curl ipinfo.io"
+```
+
+### 启动器
+
+[Ulauncher](https://ulauncher.io/)，简单高效。无论用哪个平台都应该又一款趁手的启动器。
+
+支持使用 `goldendict $1` 来调用 goldendict 查词
+
+### 文件管理
+
+压缩 `pacman -S thunar-archive-plugin`  ，文件搜索：catfish 。访问共享，安装 `gvfs-smb`
+
+### 编辑器
+
+Typora 收费后，直接全部用 Obsidian 解决笔记问题，markdown无敌。Code-OSS 编辑多个文件，单个文件用系统自带的 mousepad 打开。LibreOffice 或者用腾讯在线文档对付 msoffice 格式。
+
+`sudo pacman -S libreoffice-still libreoffice-still-zh-cn`
+
+### 外语学习
+
+GoldenDict （有分支强化版本 [GoldenDict-ng](https://github.com/xiaoyifang/goldendict-ng)） 和 anki 装好每天都用
+
+
 ### 图片
 
 编辑器用 GIMP，用惯了也还好。看图用 ristretto ，看漫画可以用 MComix 或 Foliate。截图用火焰截图 [Flameshot](https://github.com/lupoDharkael/flameshot) ，截图可以绑定快捷键到 `flameshot gui` 
 
 延时6秒截图命令： `flameshot gui -d 6000`
 
-## 影音
+### 影音
 
 - MPV 主力播放。 VLC 可以看网络直播流，也适合播放整个文件夹，VLC可以批量转换音频视频，也可以订阅 podcast
 - 音乐播放用 Audacious ，需要编辑音乐信息装一个 Kid3。听在线音乐可以用 [Listen 1 音乐播放器](https://listen1.github.io/listen1/) 。
@@ -183,11 +186,6 @@ pdf浏览就装 Evince ，图形化的PDF剪裁工具 [krop](http://arminstraub.
 - 拆分pdf  `qpdf --empty --pages infile.pdf 1-5 -- outfile.pdf`
 - 拆分pdf的简单方法是用内置pdf浏览器打印到pdf文件！
 
-
-
-## 网络软件
-
-
 ### 浏览器
 
 Firefox 主力可同步，Chrome 备用
@@ -200,17 +198,17 @@ Firefox 主力可同步，Chrome 备用
 
 ### RSS
 
- [QuiteRss](https://quiterss.org/) 支持socks5代理，自定义快捷键。之前用了几年[Liferea](https://lzone.de/liferea/) 
+[Liferea](https://lzone.de/liferea/) 
  
- ### 下载
+### 下载
 
 wget  / [lux-dl](https://github.com/iawia002/lux) / youtube-dl / qbittorrent  / [AriaNg](https://github.com/mayswind/AriaNg)
 
-阿里云推荐用：阿里云盘小白羊版 https://github.com/liupan1890/aliyunpan
+~~阿里云推荐用：阿里云盘小白羊版~~
 
 ### 即时通讯
 
-微信，统信 UOS 版有小问题，也可以用下面命令开一个独立窗口。
+微信，统信 UOS 版有小问题，也可以chrome，用下面命令开一个独立窗口
 
 `google-chrome-stable --new-window --app=https://wx.qq.com`
 
@@ -236,7 +234,7 @@ wget  / [lux-dl](https://github.com/iawia002/lux) / youtube-dl / qbittorrent  / 
 - 配置git，参考：https://www.runoob.com/w3cnote/git-guide.html
 
 
-### 其他问题
+## 其他问题
 
 #### 环境变量
 
