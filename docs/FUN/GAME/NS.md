@@ -19,10 +19,14 @@ date: 2022-11-01
 
 ## 系统升级
 
-参考： [如何给使用大气层Atmosphere的Switch系统升级 | 肉壳的胡思八道](https://colinzhang.com/2021/06/how-to-update-switch-firmware-if-you-are-using-atmosphere/)
+参考： [如何给使用大气层Atmosphere的Switch系统升级 | 肉壳的胡思八道](https://colinzhang.com/2021/06/how-to-update-switch-firmware-if-you-are-using-atmosphere/) 或者 https://rentry.org/UpdateCFW
 
-！！ 注意更新dbi
+
+- 注意更新dbi
+- fusee.bin in your /bootloader/payloads/ folder.
+
 
 ## 资源
 
 - [nsw2u.com](https://nsw2u.com/)
+- https://nxbrew.com/

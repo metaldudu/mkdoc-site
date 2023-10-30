@@ -13,20 +13,18 @@ date: 2023-06-10
 
 ## BT
 
--  RARBG [Backup of magnets from RARBG](https://github.com/2004content/rarbg) [mirror]([https://www2.rarbggo.to/movies/](https://www2.rarbggo.to/movies/))
+- BT搜索 https://anybt.eth.limo/#/
+- [ØMagnet](https://9mag.net/)
+-  ~~RARBG~~
 - [piratebay](https://piratebay.live/)
 - https://yts.mx/
 - https://1337x.to/
-- [ØMagnet](https://9mag.net/)
 
-## 搜索
-
-- 茶杯狐 [https://www.cupfox.com/](https://www.cupfox.com/)
-- 电影狗搜索 [https://dianyinggou.com/](https://dianyinggou.com/) 
 
 ## 在线
 
 - [小宝影院 - 在线视频](https://xiaoheimi.net/index.php)
+- [低端影视 - 超清在线视频站](https://ddys.art/) [https://ddys.info](https://ddys.info)
 
 ## 网盘资源站
 
@@ -38,14 +36,11 @@ date: 2023-06-10
 
 ## 影视
 
-- 美剧迷 https://www.meijumi.net/
-- ⽐特⼤熊 [https://www.btdx8.com/](https://www.btdx8.com/)
 - 美剧天堂 - [https://www.meijutt.tv/](https://www.meijutt.tv/)
 - 比特影视 [https://www.bteye.com/](https://www.bteye.com/)
 - 人人影视分享 [https://yyets.dmesg.app/home](https://yyets.dmesg.app/home)
-- 阳光影视 - [https://dy.ygdy8.com/](https://dy.ygdy8.com/)
 - ⾳范丝 [https://www.yinfans.net/](https://www.yinfans.net/)
-- yyds [https://yyds.fans/](https://yyds.fans/)
+
 
 ##  动漫
 
@@ -64,7 +59,6 @@ date: 2023-06-10
 
 - FIX字幕侠   [https://www.zimuxia.cn/](https://www.zimuxia.cn/)
 - Orange字幕组  [http://www.orangesub.com/](http://www.orangesub.com/)
-- NEW字幕组  [https://newzmz.com/](https://newzmz.com/)
 - 东京不够热 [https://www.tokyonothot.com/](https://www.tokyonothot.com/)
 - 冰冰字幕组 [https://www.icezmz.com/](https://www.icezmz.com/)
 - 诸神字幕组 [https://subs.kamigami.org/](https://subs.kamigami.org/)

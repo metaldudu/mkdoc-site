@@ -31,7 +31,7 @@ date: 2022-12-04
 ##  效率
 
 - Loop Habit Tracker 习惯养成记录
-- Cx File Explorer 文件管理：免费，支持FTP/webdav/网盘映射
+- Cx File Explorer 文件管理：免费，支持FTP/webdav/网盘映射 ｜ [Mixplorer](https://forum.xda-developers.com/t/app-2-2-mixplorer-v6-x-released-fully-featured-file-manager.1523691/)
 - 输入法：谷歌拼音，旧但简单 ｜ [Fcitx 安卓版](https://github.com/fcitx5-android/fcitx5-android)，还有[词库](https://github.com/wuhgit/CustomPinyinDictionary)
 
 ## 编辑器

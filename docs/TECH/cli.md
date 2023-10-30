@@ -52,7 +52,7 @@ cmus [https://github.com/cmus/cmus](https://github.com/cmus/cmus)
 
 分割音频文件为flac ，注意 cue 文件编码为 UTF-8
 
-`shnsplit -f CDImage.cue -t "%n - %t" -o flac CDImage.wav`
+`shnsplit -f CDImage.cue -t "%n - %t" -o flac CDImage.flac`
 
 如果操作ape文件需要装 mac `yay -S mac`
 

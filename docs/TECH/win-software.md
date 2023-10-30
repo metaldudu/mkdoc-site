@@ -56,3 +56,6 @@ date: 2022-09-03
 - [WorkFlowy](http://workflowy.com/) -列表记录工具
 
 
+## 增补
+
+- [Google 拼音 2.7.25.128 版本](https://dl.google.com/pinyin/v2/GooglePinyinInstaller.exe)

@@ -25,7 +25,7 @@ date: 2022-11-11
 - 地图下载器 [https://gitee.com/CrimsonHu/java_map_download](https://gitee.com/CrimsonHu/java_map_download)
 - github hosts https://github.com/ineo6/hosts
 - 大量 cheetsheet  [https://cheatography.com/](https://cheatography.com/)
-
+- [Umi-OCR: OCR图片转文字识别离线软件](https://github.com/hiroi-sora/Umi-OCR)
 ### 软件皮肤
 
 - 暗色德古拉风格皮肤 [Dracula — Dark theme for 217+ apps](https://draculatheme.com/)

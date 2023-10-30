@@ -64,9 +64,10 @@ pacman -R $(sudo pacman -Qdtq) 删除孤儿包
 ### 面板
 
 - 声音：安装 alsa-utils 和  pulseaudio。安装　`xfce4-pulseaudio-plugin` ，面板添加音量图标
-- 任务栏靠左后，可以设置时钟显示，参考[这里]() 
+- 任务栏靠左后，可以设置时钟显示，参考[这里]() ，自定义时间格式为： %H%n⋅⋅%n%M
 - 系统栏图标大小不合适，参考[这里](https://bbs.archlinux.org/viewtopic.php?id=222292)
 - 【故障】桌面窗口标题栏消失，无法拖动和改变大小，或者面板消失。解决方法：`xfwm4 --replace &`
+- 
 
 ### 快捷键
 
@@ -153,7 +154,7 @@ GoldenDict （有分支强化版本 [GoldenDict-ng](https://github.com/xiaoyifan
 ### 影音
 
 - MPV 主力播放。 VLC 可以看网络直播流，也适合播放整个文件夹，VLC可以批量转换音频视频，也可以订阅 podcast
-- 音乐播放用 Audacious ，需要编辑音乐信息装一个 Kid3。听在线音乐可以用 [Listen 1 音乐播放器](https://listen1.github.io/listen1/) 。
+- 音乐播放用 Audacious ，专辑管理用 [AQuod Libet](https://quodlibet.readthedocs.io/en/latest/)，需要编辑音乐信息装一个 Kid3。听在线音乐可以用 [Listen 1 音乐播放器](https://listen1.github.io/listen1/) 。
 - 录音用  Audacity
 
 #### mpv显示两个字幕

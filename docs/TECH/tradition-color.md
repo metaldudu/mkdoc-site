@@ -5,6 +5,9 @@ date: 2022-09-03
 
 # 传统颜色
 
+```
+
+
 - <span style="color:#9D2932">#9D2932 ██████████</span> 胭脂
 - <span style="color:#EDFEB0">#EDFEB0 ██████████</span> 牙白
 - <span style="color:#789262">#789262 ██████████</span> 竹青
@@ -36,6 +39,8 @@ date: 2022-09-03
 - <span style="color:#E13E7D">#E13E7D ██████████</span> 踯躅，杜鹃花的颜色
 - <span style="color:#88ABDA">#88ABDA ██████████</span> 窃蓝
 - <span style="color:#FB8D6F">#FB8D6F ██████████</span> 酡颜
+
+```
 
 ---
 

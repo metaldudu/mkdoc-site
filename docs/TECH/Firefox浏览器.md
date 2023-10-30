@@ -2,7 +2,7 @@
 
 ## 界面
 
-使用 userChrome.css 定义紧凑布局： https://github.com/Dook97/firefox-qutebrowser-userchrome
+使用 userChrome.css 定义紧凑布局：  https://github.com/Dook97/firefox-qutebrowser-userchrome
 
 
 - **取消标题栏**：菜单栏右键 -- 定制 Firefox -- 左下角，取消标题栏勾选

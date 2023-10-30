@@ -60,7 +60,7 @@ date: 2023-02-07
 - Leo Babauta：[知足常乐手册](https://read.douban.com/ebook/25002332/) | 豆瓣阅读，关于自我接纳
 - [取悦的工序：如何理解游戏](https://read.douban.com/ebook/4972883/) | 豆瓣阅读，介绍游戏开发的原理和过程的科普书。
 - [自由软件，自由社会（第三版）](https://fsfs-zh.readthedocs.io/) Richard M. Stallman 的文章集
-
+- [写作只能塑造真实的自己](https://github.com/Macin20/why-we-write ) | 整理了作家关于写作的心得体会
 
 ### 堪用网站
 

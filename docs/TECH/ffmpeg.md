@@ -44,22 +44,19 @@ ffmpeg -i animation.gif -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw
 
 ###  m4a/webm to mp3
 
-ffmpeg -i input.m4a -c:v copy -c:a libmp3lame -q:a 4 output.mp3
+ffmpeg -i input.m4a -c:v copy -c:a libmp3lame -q:a 2 output.mp3
 
-ffmpeg -i input.webm -c:v copy -c:a libmp3lame -q:a 4 output.mp3
+ffmpeg -i input.webm -c:v copy -c:a libmp3lame -q:a 2 output.mp3
 
-ffmpeg -i in.mp4 -c:v copy -c:a libmp3lame -q:a 4 out.mp3
+ffmpeg -i in.mp4 -c:v copy -c:a libmp3lame -q:a 2 out.mp3
 
-### wav to mp3
-
-````
 ffmpeg -i input.wav -vn -ar 44100 -ac 2 -b:a 192k output.mp3
-````
+
 
 ### wav to flac
 
 ```
-ffmpeg -i in.wav -af aformat=s32:176000 out.flac
+ffmpeg -i in.wav  out.flac
 ```
 
 
@@ -90,6 +87,13 @@ $ mkdir newfiles
 $ for f in *.m4a; do ffmpeg -i "$f" -codec:v copy -codec:a libmp3lame -q:a 2 newfiles/"${f%.m4a}.mp3"; done
 ```
 
+一行的例子
+
+`for i in *.m4a; do ffmpeg -i "$i"  -c:v copy -c:a libmp3lame -q:a 4 "${i%.*}.mp3"; done`
+
+批量wav到flac
+
+`for i in *.wav; do ffmpeg -i "$i" "${i%.*}.flac"; done`
 
 ## 下载m3u
 

@@ -214,7 +214,7 @@
 
 * 发散模式的用处：先做难题，一两分钟不会就跳过，发散模式会思考这个题
 
-###Final helpful hints for tests
+### Final helpful hints for tests
 
 * 转换心态：把害怕考不好，想成“我很兴奋，能考好”
 * 呼吸，腹部呼吸而不是胸腔呼吸

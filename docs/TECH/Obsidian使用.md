@@ -1,8 +1,12 @@
-# Obsidian使用
+---
+tags: 软件技巧
+
+---
+
 
 ## 简介
 
-- [[卡片笔记]]
+- [[我的笔记术进化史]]
 - markdown文本
 - [[双向链接]]，用双括号实现
 
@@ -50,7 +54,10 @@ https://help.obsidian.md/How+to/Use+callouts
 	LIST WHERE file.mtime >= date(today) - dur(10 day) sort file.mtime desc limit (5)
 ```
 
+读书记录展示：
 
+- https://github.com/zhaohongxuan/obsidian-weread-plugin/wiki/%E4%BD%BF%E7%94%A8Dataview%E8%BF%9B%E8%A1%8C%E4%B9%A6%E7%B1%8D%E7%AE%A1%E7%90%86
+- https://minimal.guide/cards
 
 
 ## 笔记方法
@@ -61,12 +68,15 @@ MOC（Map Of Content）类似TOC，但可以用正常笔记形式，把其他笔
 
 就像卡片笔的盒子，MOC就是当作盒子的笔记，把一定主题的卡片集合在一起。
 
-## 日记
+### 日记
 
 参考：[How I Use the Daily Notes Plugin in Obsidian.md: A Comprehensive Guide – The Buccaneer's Bounty](https://thebuccaneersbounty.wordpress.com/2022/01/05/how-i-use-the-daily-notes-plugin-a-comprehensive-guide/)
 
 日记的内容可以统计。
 
+### 读书笔记
+
+- 读书笔记的例子，作者和书籍分开 https://jamierubin.net/blog-series/practically-paperless-with-obsidian/
 
 ## 帖子和链接
 
