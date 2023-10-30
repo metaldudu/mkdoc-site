@@ -14,8 +14,6 @@ tags: 软件技巧
 
 无法下载插件和主题，需要翻墙。 使用插件：https://github.com/juqkai/obsidian-proxy-github
 
-
-
 ### 快捷键
 
 ctrl+E 预览模式
