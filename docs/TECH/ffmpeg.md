@@ -37,7 +37,9 @@ ffmpeg -i in.wav  out.flac
 
 批量wav到flac
 
-`for i in *.wav; do ffmpeg -i "$i" "${i%.*}.flac"; done`
+```
+for i in *.ape; do ffmpeg -i "$i" "${i%.*}.flac"; done
+```
 
 
 ### 下载HLS在线视频： 
@@ -116,6 +118,13 @@ done
 ```
 ffmpeg -headers "referer: https://emturbovid.com/" -i <url> -c copy -bsf:a aac_adtstoasc output_file.mp4
 ```
+
+### 减小视频体积
+
+```
+ffmpeg -i input.mp4 -vcodec libx264 -crf 20 output.mp4
+```
+
 ## 参考
 
 - [ffmpeg 入门笔记](http://einverne.github.io/post/2015/12/ffmpeg-first.html)

@@ -28,6 +28,7 @@ kobo原生格式，用 Calibre 安装 KoboTouchExtended 插件（会自动传送
 
 内置字典需要全局翻墙激活
 
-## 教程
+## 链接
 
-- https://github.com/Megumi-B/Kobo_Tips
+- wiki https://en.wikipedia.org/wiki/Kobo_eReader
+- 技巧 https://github.com/Megumi-B/Kobo_Tips

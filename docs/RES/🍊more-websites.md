@@ -26,9 +26,12 @@ date: 2022-11-11
 - github hosts https://github.com/ineo6/hosts
 - 大量 cheetsheet  [https://cheatography.com/](https://cheatography.com/)
 - [Umi-OCR: OCR图片转文字识别离线软件](https://github.com/hiroi-sora/Umi-OCR)
-### 软件皮肤
-
 - 暗色德古拉风格皮肤 [Dracula — Dark theme for 217+ apps](https://draculatheme.com/)
+
+### 字体
+
+- 符号字体 Nerd Font  https://www.nerdfonts.com/
+- 英文字体下载 https://www.cufonfonts.com/
 
 ### arch linux
 
@@ -37,14 +40,19 @@ date: 2022-11-11
 
 ### 安卓
 
-- 应用下载 https://apkcombo.com/
 - 应用下载 https://www.apkmirror.com/
+	- https://liteapks.com/
+	- https://apkcombo.com/
 - 开源的安卓应用列表 https://github.com/offa/android-foss
 
+## 资源下载
 
-### Chrome扩展
+### 工具
 
-- [uBlacklist](https://iorate.github.io/ublacklist/) 屏蔽google搜索中某个网站
+- 阿里云盘第三方：小白羊网盘 https://github.com/gaozhangmin/aliyunpan
+### 浏览器扩展
+
+- uBlacklist 屏蔽google搜索中某个网站 https://iorate.github.io/ublacklist/
 
 ### 油猴脚本
 
@@ -52,6 +60,11 @@ date: 2022-11-11
 - 哔哩哔哩增强脚本 [Bilibili-Evolved](https://github.com/the1812/Bilibili-Evolved)
 - 喜马拉雅专辑下载器 https://greasyfork.org/zh-CN/scripts/435495
 - Open the Fxxking URL Right Now https://greasyfork.org/zh-CN/scripts/412612
+
+### NAS
+
+- 媒体记录工具 https://github.com/ignisda/ryot
+- 
 
 ## 在线工具
 
@@ -65,6 +78,8 @@ date: 2022-11-11
 - 打字背单词 https://qwerty.kaiyi.cool/
 - 打字速度测试 https://www.keyhero.com/free-typing-test/
 - colorfu 文字编辑器生成图片 https://pearmini.github.io/colorfu/
+- 在线粘贴文本 https://rentry.co/
+- 自建服务列表 https://github.com/awesome-selfhosted/awesome-selfhosted
 
 ### 日历
 
@@ -91,6 +106,9 @@ date: 2022-11-11
 - [http://www.23ape.net/](http://www.23ape.net/) 无损音频下载
 - [YouTube音频库](https://www.youtube.com/audiolibrary/music) 免费的音乐和音效
 - [vgmrips](https://vgmrips.net/) 游戏音乐rip
+- https://downloads.khinsider.com/ 游戏原生rip和无损ost，强
+- https://okamimiost.com/ 分享ACG音乐
+- 
 
 ### 免费音频
 
@@ -154,8 +172,9 @@ date: 2022-11-11
 
 ### HTML&CSS
 
-- HTML Color Codes https://htmlcolorcodes.com/
-- [zhongguose － 传统颜色](http://zhongguose.com/)
+- 选色 [https://colorpicker.me/](https://colorpicker.me/)
+- 生成配色 https://coolors.co/palettes/trending
+- 传统颜色 [http://zhongguose.com/](http://zhongguose.com/)
 - 灰度颜色 [https://calcolor.co/palette/942409461](https://calcolor.co/palette/942409461)
 
 ### 图库
@@ -173,6 +192,9 @@ date: 2022-11-11
 - 中国老照片 [Welcome | Historical Photographs of China](https://www.hpcbristol.net/)
 - 世界名画 [Interactive Fine Art Gallery & Museum USEUM](https://useum.org/)
 - 书封面收藏 [http://bookcoverarchive.com/](http://bookcoverarchive.com/)
+- 音乐专辑封面查找 http://coverbox.henry-hu.com/
+- itunes 封面查找 https://bendodson.com/projects/itunes-artwork-finder/
+- 
 
 ### 博物馆
 

@@ -35,6 +35,9 @@ https://help.obsidian.md/How+to/Use+callouts
 
 ### 插件
 
+无法更新插件，使用代理： `obsidian --proxy-server="http://127.0.0.1:9087"
+`
+- https://github.com/yucai100/obsidian-proxy-github 更新插件代理，可能已经失效
 - advanced table 参考： [Obsidian 高级表格插件 (Advanced Tables) 的安装与使用 | ReadingHere](https://www.readinghere.com/blog/obsidian-advanced-tables-plugin/)
 - dataview 参考： https://cyddgh.github.io/post/202103152106/
 - https://github.com/mgmeyers/obsidian-style-settings 调整主题
@@ -55,8 +58,14 @@ https://help.obsidian.md/How+to/Use+callouts
 读书记录展示：
 
 - https://github.com/zhaohongxuan/obsidian-weread-plugin/wiki/%E4%BD%BF%E7%94%A8Dataview%E8%BF%9B%E8%A1%8C%E4%B9%A6%E7%B1%8D%E7%AE%A1%E7%90%86
-- https://minimal.guide/cards
+- https://minimal.guide/cards 卡片视图！
 
+#### 显示图书封面的网址，但目前有些无法显示
+
+```dataview
+	table "![\|120](https://dou.img.lithub.cc/book/" + doubanid +".jpg)" as Cover, author as Author from "Reading/all books" AND #r/reading 
+	sort file.name ASC
+```
 
 ## 笔记方法
 
@@ -93,3 +102,5 @@ MOC（Map Of Content）类似TOC，但可以用正常笔记形式，把其他笔
 
 - oldwinterの数字花园  https://notes.oldwinter.top/ 
 - https://notes.singee.me/
+- 管理电影的例子： https://www.zhihu.com/question/20548322/answer/2733002613
+- 个人图书馆的例子： https://zhuanlan.zhihu.com/p/614286218

@@ -2,9 +2,11 @@
 
 ## 界面
 
-使用 userChrome.css 定义紧凑布局：  https://github.com/Dook97/firefox-qutebrowser-userchrome
-
-
+- 官方指南： https://www.reddit.com/r/firefox/wiki/userchrome/
+- 布局：
+	- github主题搜一个喜欢的 https://github.com/topics/userchrome
+	- 精简功能的主题 https://github.com/Dook97/firefox-qutebrowser-userchrome
+	- 在用的一个 https://github.com/dannycolin/fx-compact-mode
 - **取消标题栏**：菜单栏右键 -- 定制 Firefox -- 左下角，取消标题栏勾选
 
 ### 优化配置
@@ -21,10 +23,14 @@
 
 ## 扩展
 
-- uBlock Origin - 广告过滤
+- uBlock Origin - 广告过滤，简中环境无法安装
 - uBlacklist - 屏蔽特定网站搜索结果
+- [Dark Reader](https://darkreader.org/) - 相对好用的暗色模式切换
 - [CopyTabTitleUrl](https://addons.mozilla.org/en-US/firefox/addon/copytabtitleurl/) - 拷贝markdown格式的URL
 - Proxy SwitchyOmega - 代理切换
-- [Violentmonkey](https://addons.mozilla.org/zh-CN/firefox/addon/violentmonkey/) - 脚本，开启 webdav 同步，配置坚果云
-- [Dark Mode](https://mybrowseraddon.com/dark-mode.html) - 相对好用的暗色模式切换
+- [Violentmonkey](https://addons.mozilla.org/zh-CN/firefox/addon/violentmonkey/) - 油猴脚本支持，可以用 webdav 同步配置文件，比如坚果云
 
+
+## 其他技巧
+
+- 对于某些不允许复制的网站，可以打开阅读模式（ctrl + alt + r）

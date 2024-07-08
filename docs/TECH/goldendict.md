@@ -55,6 +55,12 @@ Longman Dictionary of Contemporary English，例句都有发音，英英解释�
 
 需要一点点学习成本，但收益会非常巨大的工具。
 
+
+### 20240619 update
+
+- dict字典收集下载 https://downloads.freemdict.com/
+
+
 ---
 
 - 创建时间：20200827

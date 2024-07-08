@@ -39,7 +39,7 @@ pacman -R xxx 卸载
 pacman -Rs xxx 卸载包以及依赖包
 pacman -Rns xxx 删除包且删除配置文件
 pacman -Qs xxx 查询已安装包
-pacman -R $(sudo pacman -Qdtq) 删除孤儿包
+pacman -Rs $(sudo pacman -Qdtq) 删除孤儿包
 
 ### yay
 
@@ -52,6 +52,14 @@ pacman -R $(sudo pacman -Qdtq) 删除孤儿包
 ### 显示
 
 使用2k显示器开缩放会很大，可以调整 Settings - Appearance - Fonts - DPI 到130左右
+
+### 音频
+
+蓝牙支持：
+
+sudo pacman -S bluez bluez-utils blueman pulseaudio-bluetooth
+
+sudo systemctl restart bluetooth.service
 
 ### 主题
 
@@ -75,19 +83,27 @@ pacman -R $(sudo pacman -Qdtq) 删除孤儿包
 - 隐藏所有窗口：win+D
 - 启动器，使用  [Ulauncher](https://github.com/Ulauncher/) ：win+~
 - 截图，使用 Flameshot ：`flameshot gui > win+3`
+- 解决 xfce4-terminal 填充空隙问题 [url](https://forum.xfce.org/viewtopic.php?pid=66277#p66277)
 
 ### 字体
 
-查看中文字体： `fc-list :lang=zh` 可以看到字体名，便于配置软件
+参考这个： https://wiki.archlinuxcn.org/wiki/%E5%AD%97%E4%BD%93%E9%85%8D%E7%BD%AE/%E4%B8%AD%E6%96%87
 
-- 等宽字体： `pacman -S ttf-dejavu` 
-- 编程字体：[Fira Code](https://github.com/tonsky/FiraCode)
-- 文泉驿微米黑：wqy-microhei`
-- emoji：noto-fonts-emoji
-- 谷歌东亚字体，包含中日韩：`noto-fonts-cjk` 
-- 思源黑体，和上面一样，我选择这个： adobe-source-han-sans-cn-fonts 
-- 思源宋体 adobe-source-han-serif-cn-fonts  
+查看中文字体： `fc-list :lang=zh` 可以看到字体名，便于配置软件 
+`fc-cache -fv` 刷新字体显示
+
+```
+sudo pacman -S ttf-dejavu wqy-microhei noto-fonts-emoji
+```
+
+不要安装谷歌东亚字体，会造成混乱：`noto-fonts-cjk` 安装思源黑体和宋体：
+
+```
+sudo pacman -S adobe-source-han-sans-cn-fonts  adobe-source-han-serif-cn-fonts  
+```
+
 - [简体中文等距更纱黑体+Nerd图标字体库](https://github.com/laishulu/Sarasa-Mono-SC-Nerd) 适合终端中英文混排使用  `yay -S nerd-fonts-sarasa-mono`
+- 编程字体：[Fira Code](https://github.com/tonsky/FiraCode)
 
 自己安装的字体放到 `~/.local/share/fonts`
 
@@ -112,7 +128,7 @@ pacman -R $(sudo pacman -Qdtq) 删除孤儿包
 - shift+空格 切换全角/半角
 - ctrl+shift+3 切换emoji
 
-## 软件
+## 软件及配置
 
 ### 代理
 
@@ -134,6 +150,11 @@ aliass ip="curl ipinfo.io"
 
 压缩 `pacman -S thunar-archive-plugin`  ，文件搜索：catfish 。访问共享，安装 `gvfs-smb`
 
+Thunar 支持 custom actions ，参考[这里](https://www.reddit.com/r/xfce/comments/9649y4/nice_thunar_trick/)，可以在右键菜单添加一个“复制当前目录”
+
+`echo -n "%F" | xclip -selection c`
+
+比如用 GIMP 打开图片，添加： `gimp %f`
 ### 编辑器
 
 Typora 收费后，直接全部用 Obsidian 解决笔记问题，markdown无敌。Code-OSS 编辑多个文件，单个文件用系统自带的 mousepad 打开。LibreOffice 或者用腾讯在线文档对付 msoffice 格式。
@@ -142,8 +163,7 @@ Typora 收费后，直接全部用 Obsidian 解决笔记问题，markdown无敌�
 
 ### 外语学习
 
-GoldenDict （有分支强化版本 [GoldenDict-ng](https://github.com/xiaoyifang/goldendict-ng)） 和 anki 装好每天都用
-
+GoldenDict （有分支强化版本 [GoldenDict-ng](https://github.com/xiaoyifang/goldendict-ng)） 和 [[anki]] 装好每天都用
 
 ### 图片
 
@@ -199,13 +219,12 @@ Firefox 主力可同步，Chrome 备用
 
 ### RSS
 
-[Liferea](https://lzone.de/liferea/) 
+[Liferea](https://lzone.de/liferea/) 信息摄入主要来源
  
 ### 下载
 
 wget  / [lux-dl](https://github.com/iawia002/lux) / youtube-dl / qbittorrent  / [AriaNg](https://github.com/mayswind/AriaNg)
 
-~~阿里云推荐用：阿里云盘小白羊版~~
 
 ### 即时通讯
 
@@ -215,6 +234,8 @@ wget  / [lux-dl](https://github.com/iawia002/lux) / youtube-dl / qbittorrent  / 
 
 ### 网盘
 
+
+
 坚果云打开后白屏，按照[这里的提示](https://blog.zhullyb.top/2021/10/02/nutstore-guide-on-archlinux-kde/)，执行：
 
 `sudo sed -i 's|webui.enable=true|webui.enable=false|' /opt/nutstore/conf/nutstore.properties`
@@ -223,7 +244,7 @@ wget  / [lux-dl](https://github.com/iawia002/lux) / youtube-dl / qbittorrent  / 
 
 ### Syncthing
 
-- 安装 syncthing / syncthing-gtk
+- 安装 syncthing 或 syncthing-gtk ，多个PC和手机同步文件夹
 - 加入服务： `sudo systemctl enable syncthing@laodu.service`
 - 启动服务： `sudo systemctl start syncthing@laodu.service`
 
@@ -234,14 +255,11 @@ wget  / [lux-dl](https://github.com/iawia002/lux) / youtube-dl / qbittorrent  / 
 - 复制 `~.ssh/id_rsa.pub` 内容到github-Account settings-SSH Keys，Title随意
 - 配置git，参考：https://www.runoob.com/w3cnote/git-guide.html
 
-
 ## 其他问题
 
 #### 环境变量
 
-编辑 `~/.bashrc`，加入
-
-`export PATH=$PATH:/somepath`
+编辑 `~/.bashrc`，加入 `export PATH=$PATH:/somepath`
 
 #### 电源休眠
 
@@ -264,6 +282,8 @@ wget  / [lux-dl](https://github.com/iawia002/lux) / youtube-dl / qbittorrent  / 
 
 则可以使用 ctrl+alt +L 锁定，返回 lightdm登录界面。可以安装 lightdm-gtk-greeter-settings 进一步美化登录界面。
 
+#### 错误
+
 !!! 问题，关闭笔记本盖子再打开，屏幕会出现
 
 #: ../src/xfpm-power.c:436
@@ -272,9 +292,13 @@ msgid ""
 "Do you still want to continue to suspend the system?"
 msgstr "嘿，所有锁屏工具都不能正常运行呢，所以我就无法锁定屏幕啦。\n您想继续挂起系统么？"
 
-
 edit `/usr/bin/xflock4`
 
+#### Telegram无法输入中文
+
+- 编辑 ~/.local/share/applications/telegramdesktop.desktop
+- 在命令部分前面加入 `env QT_IM_MODULE=fcitx`
+- 重新打开菜单快捷方式
 ## 结语
 
 奥卡姆剃刀原则说：如无必要、勿增实体。够用好用，还要怎样？

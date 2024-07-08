@@ -64,7 +64,7 @@ date: 2023-08-11
 ## 日本
 
 - [东京物语](https://www.bilibili.com/bangumi/play/ss28513/)
-- [步履不停](https://www.bilibili.com/bangumi/play/ss11383/)
+- 步履不停
 - [深夜食堂](https://www.bilibili.com/bangumi/play/ss12075/)
 - [摇摆](https://www.bilibili.com/bangumi/play/ss12456/)
 - [花火](https://v.qq.com/x/cover/cdq1xvjttx3indt.html )
