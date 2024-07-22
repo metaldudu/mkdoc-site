@@ -102,3 +102,10 @@ date: 2022-09-03
 
 - https://www.jianshu.com/p/f2331c73bc35
 - 介绍：https://www.xiaohuasheng.cn/blog/ea85de2f0c438bd2
+
+
+
+**黑猫**来自鹅王：  
+Earlyreads - Black Cat Publishing - Levels 1-5 / Audiobooks for children 4-12 years [2000-2008, PDF+MP3, ENG] magnet:?xt=urn:btih:918314956FF476FC195A5499BCD9EAA9EC8CCA09  
+Black Cat Publishing, Levels 1-6 [2000-2003, PDF+MP3, ENG] magnet:?xt=urn:btih:990B88293DE7F3DD517AC39BBEA1E8ED40F713A8  
+Black Cat Publishing, Reading & Training, Levels 1-6 [2006-2009, PDF+MP3, ENG] magnet:?xt=urn:btih:8ED9086CE327028DF3ED3172AE04B367B19C6876

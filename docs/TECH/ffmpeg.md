@@ -26,7 +26,7 @@ $ for f in *.m4a; do ffmpeg -i "$f" -codec:v copy -codec:a libmp3lame -q:a 2 new
 一行的例子
 
 ```
-for i in *.m4a; do ffmpeg -i "$i"  -c:v copy -c:a libmp3lame -q:a 4 "${i%.*}.mp3"; done`
+for i in *.m4a; do ffmpeg -i "$i"  -c:v copy -c:a libmp3lame -q:a 4 "${i%.*}.mp3"; done
 ```
 
 ### wav to flac

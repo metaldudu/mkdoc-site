@@ -6,7 +6,8 @@ update:
 
 ## System
 
-- [yay](https://github.com/Jguer/yay "https://github.com/Jguer/yay") - arch linux 使用 AUR
+- [yay](https://github.com/Jguer/yay) - arch linux 使用 AUR
+- [bashtop](https://github.com/aristocratos/bashtop) - 系统监视器
 - [rime-cloverpinyin](https://github.com/fkxxyz/rime-cloverpinyin) - rime的拼音输入方案
 - [Ulauncher](https://ulauncher.io/) - 快捷启动工具
 
