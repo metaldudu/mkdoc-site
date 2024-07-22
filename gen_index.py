@@ -8,10 +8,10 @@ def list_markdown_files(directory):
         if markdown_files:
             # 添加目录名
             directory_name = os.path.relpath(root, directory)
-            files_list.append(f"- {directory_name}:")
+            files_list.append(f"  - {directory_name}:")
             # 添加文件列表
             for file in markdown_files:
-                files_list.append(f"  - {file.split('.')[0]}：{file}")
+                files_list.append(f"    - {file.split('.')[0]}: {file}")
 
     return files_list
 

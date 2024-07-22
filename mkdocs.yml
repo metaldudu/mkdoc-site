@@ -51,89 +51,48 @@ extra:
 nav:
 
   - LANG:
-    - english-listening-resource：english-listening-resource.md
-    - little-fox：little-fox.md
-    - index：index.md
-    - black-cat：black-cat.md
+    - english-listening-resource: english-listening-resource.md
+    - little-fox: little-fox.md
+    - index: index.md
+    - black-cat: black-cat.md
   - RES:
-    - chinese-song-bpm：chinese-song-bpm.md
-    - chinese-zodiac：chinese-zodiac.md
-    - online-free-movie：online-free-movie.md
-    - free-fonts：free-fonts.md
-    - ebook-website：ebook-website.md
-    - movie-website：movie-website.md
-    - 🍊more-websites：🍊more-websites.md
-    - index：index.md
-    - things-to-buy：things-to-buy.md
-    - good-habits：good-habits.md
+    - chinese-song-bpm: chinese-song-bpm.md
+    - chinese-zodiac: chinese-zodiac.md
+    - online-free-movie: online-free-movie.md
+    - free-fonts: free-fonts.md
+    - ebook-website: ebook-website.md
+    - movie-website: movie-website.md
+    - 🍊more-websites: 🍊more-websites.md
+    - index: index.md
+    - things-to-buy: things-to-buy.md
+    - good-habits: good-habits.md
   - READ:
-    - index：index.md
-    - 十年阅读计划：十年阅读计划.md
+    - index: index.md
+    - 十年阅读计划: 十年阅读计划.md
   - READ/LIST:
-    - NEA票选100本儿童书：NEA票选100本儿童书.md
-    - 大家小书：大家小书.md
-    - 亚马逊100本童书：亚马逊100本童书.md
-    - 书单-2017公众号读者推荐书目：书单-2017公众号读者推荐书目.md
-    - 亚马逊100本必读书：亚马逊100本必读书.md
-    - 大民大国40年40本书：大民大国40年40本书.md
-    - 100本最佳侦探小说：100本最佳侦探小说.md
-    - 书单-2016公众号读者推荐数目：书单-2016公众号读者推荐数目.md
-    - 卡内基奖：卡内基奖.md
-    - 纽伯瑞奖：纽伯瑞奖.md
+    - NEA票选100本儿童书: NEA票选100本儿童书.md
+    - 大家小书: 大家小书.md
+    - 亚马逊100本童书: 亚马逊100本童书.md
+    - 书单-2017公众号读者推荐书目: 书单-2017公众号读者推荐书目.md
+    - 亚马逊100本必读书: 亚马逊100本必读书.md
+    - 大民大国40年40本书: 大民大国40年40本书.md
+    - 100本最佳侦探小说: 100本最佳侦探小说.md
+    - 书单-2016公众号读者推荐数目: 书单-2016公众号读者推荐数目.md
+    - 卡内基奖: 卡内基奖.md
+    - 纽伯瑞奖: 纽伯瑞奖.md
   - K:
-    - index：index.md
-    - fav-ted-talks：fav-ted-talks.md
+    - index: index.md
+    - fav-ted-talks: fav-ted-talks.md
   - K/NOTE:
-    - MOOC-美国文化：MOOC-美国文化.md
-    - celebrity-and-morden-china：celebrity-and-morden-china.md
-    - learning-how-to-learn：learning-how-to-learn.md
-    - justice：justice.md
-    - criminal-law：criminal-law.md
-    - chinese-novel：chinese-novel.md
-    - tan-jing：tan-jing.md
-    - europe-history：europe-history.md
-    - game-psychology：game-psychology.md
-  - TECH:
-    - minimalist-launchers：minimalist-launchers.md
-    - nas：nas.md
-    - 12-tips-to-manage-files：12-tips-to-manage-files.md
-    - Firefox浏览器：Firefox浏览器.md
-    - hotkey-cheetsheet：hotkey-cheetsheet.md
-    - cmus：cmus.md
-    - ArchLinux：ArchLinux.md
-    - kobo：kobo.md
-    - vimwiki：vimwiki.md
-    - Obsidian：Obsidian.md
-    - 小屏手机参数对比：小屏手机参数对比.md
-    - manage-downloaded-ebook：manage-downloaded-ebook.md
-    - win-software：win-software.md
-    - linux-software：linux-software.md
-    - kitty：kitty.md
-    - tradition-color：tradition-color.md
-    - goldendict：goldendict.md
-    - index：index.md
-    - mkdocs：mkdocs.md
-    - manage-downloaded-media：manage-downloaded-media.md
-    - android-app：android-app.md
-    - ffmpeg：ffmpeg.md
-  - FUN:
-    - index：index.md
-  - FUN/GAME:
-    - XBOX：XBOX.md
-    - DeadCells：DeadCells.md
-    - 在线小游戏：在线小游戏.md
-    - 喜欢的游戏：喜欢的游戏.md
-    - NS：NS.md
-  - FUN/MOVIE:
-    - 比利·怀德：比利·怀德.md
-    - 库布里克：库布里克.md
-    - 伊斯特伍德：伊斯特伍德.md
-    - 查理·考夫曼：查理·考夫曼.md
-  - WRITE:
-    - 2015：2015.md
-    - 2016：2016.md
-    - index：index.md
-    - 2017：2017.md
+    - MOOC-美国文化: MOOC-美国文化.md
+    - celebrity-and-morden-china: celebrity-and-morden-china.md
+    - learning-how-to-learn: learning-how-to-learn.md
+    - justice: justice.md
+    - criminal-law: criminal-law.md
+    - chinese-novel: chinese-novel.md
+    - tan-jing: tan-jing.md
+    - europe-history: europe-history.md
+    - game-psychology: game-psychology.md
 
 
 # 
