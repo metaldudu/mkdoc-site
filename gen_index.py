@@ -11,7 +11,7 @@ def list_markdown_files(directory):
             files_list.append(f"- {directory_name}:")
             # 添加文件列表
             for file in markdown_files:
-                files_list.append(f"    - {file.split('.')[0]}：{file}")
+                files_list.append(f"  - {file.split('.')[0]}：{file}")
 
     return files_list
 
@@ -25,9 +25,9 @@ def main():
     # 打印结果
     for line in files_list:
         if line.startswith(directory_path):
-            print(line)
+            print(  line)
         else:
-            print(line)
+            print(  line)
 
 if __name__ == "__main__":
     main()

@@ -9,97 +9,53 @@ theme:
   name: material
   logo: assets/logo.png
   palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: slate # 夜间模式
-      primary: teal 
-      accent: deep orange # 链接等可交互元件的高亮色
-      toggle:
-        icon: material/lightbulb # 图标
-        name: 切换至日间模式 # 鼠标悬浮提示
-    - media: "(prefers-color-scheme: dark)"
-      scheme: default # 日间模式
-      primary: blue grey
-      accent: orange
-      toggle:
-        icon: material/lightbulb-outline
-        name: 切换至夜间模式
+  - media: "(prefers-color-scheme: light)"
+    scheme: slate # 夜间模式
+    primary: teal 
+    accent: deep orange # 链接等可交互元件的高亮色
+    toggle:
+    icon: material/lightbulb # 图标
+    name: 切换至日间模式 # 鼠标悬浮提示
+  - media: "(prefers-color-scheme: dark)"
+    scheme: default # 日间模式
+    primary: blue grey
+    accent: orange
+    toggle:
+    icon: material/lightbulb-outline
+    name: 切换至夜间模式
   features:
-    - navigation.tabs # 使用Tab来进行分类
-    - navigation.sections
-    - navigation.top # 返回顶部的按钮 在上滑时出现
-    - navigation.indexes # Tab会有一个index.md 而不是在打开Tab时打开第一篇文章
-    #- navigation.expand # 打开Tab时左侧目录全部展开
-    - search.suggest # 搜索输入一些字母时推荐补全整个单词
-    - search.highlight # 搜索出的文章关键词加入高亮
-    - content.code.copy # 可以通过按钮复制代码
+  - navigation.tabs # 使用Tab来进行分类
+  - navigation.sections
+  - navigation.top # 返回顶部的按钮 在上滑时出现
+  - navigation.indexes # Tab会有一个index.md 而不是在打开Tab时打开第一篇文章
+  #- navigation.expand # 打开Tab时左侧目录全部展开
+  - search.suggest # 搜索输入一些字母时推荐补全整个单词
+  - search.highlight # 搜索出的文章关键词加入高亮
+  - content.code.copy # 可以通过按钮复制代码
   language: zh # 一些提示性的文字会变成中文
   icon:
-    repo: fontawesome/brands/github
+  repo: fontawesome/brands/github
 
 ## [bottom-right corner]
 extra:
   social: # icons
-    - icon: simple/douban
-      link: https://www.douban.com/people/metaldudu
-    - icon: fontawesome/brands/mastodon
-      link: https://m.cmx.im/@metaldudu
-    - icon: fontawesome/brands/github
-      link: https://github.com/metaldudu
+  - icon: simple/douban
+    link: https://www.douban.com/people/metaldudu
+  - icon: fontawesome/brands/mastodon
+    link: https://m.cmx.im/@metaldudu
+  - icon: fontawesome/brands/github
+    link: https://github.com/metaldudu
 
 # 导航
 
 nav:
 
-- .:
-    - index：index.md
-- REPOST:
-    - 能量管理而非时间管理：能量管理而非时间管理.md
-    - 这鸡蛋真难吃：这鸡蛋真难吃.md
-    - 三个问题：三个问题.md
-    - 茅于轼-教育的目的是什么：茅于轼-教育的目的是什么.md
-    - 5-ways-to-simplify-your-life：5-ways-to-simplify-your-life.md
-    - 秦晖-关于文革的若干问题：秦晖-关于文革的若干问题.md
-    - 曾奇峰-我所犯过的错误：曾奇峰-我所犯过的错误.md
-    - 爱丁堡笑话：爱丁堡笑话.md
-    - 余光中-怎样改进英式中文：余光中-怎样改进英式中文.md
-    - 亚伦·斯沃茨-怎样有效利用时间：亚伦·斯沃茨-怎样有效利用时间.md
-    - 秦晖-30 年、60 年、120 年——中国历史的延续与断裂：秦晖-30 年、60 年、120 年——中国历史的延续与断裂.md
-    - 兰迪波许最后的演讲：兰迪波许最后的演讲.md
-    - 苏联笑话：苏联笑话.md
-    - 查理·芒格在南加州大学毕业典礼上的演讲：查理·芒格在南加州大学毕业典礼上的演讲.md
-    - 乔布斯2005年在斯坦福大学的演讲：乔布斯2005年在斯坦福大学的演讲.md
-    - 温家宝：我的母亲：温家宝：我的母亲.md
-    - 何伟-“中国制造”外交的兴起：何伟-“中国制造”外交的兴起.md
-    - 五祖法演讲的禅宗故事：五祖法演讲的禅宗故事.md
-    - 芒格-请先投资你自己：芒格-请先投资你自己.md
-    - 王晓明-这样的人多了社会坏不到哪里去：王晓明-这样的人多了社会坏不到哪里去.md
-    - 贾樟柯-做了一个汉奸梦：贾樟柯-做了一个汉奸梦.md
-    - 宫泽贤治-不畏风雨：宫泽贤治-不畏风雨.md
-    - 没人懂某国：没人懂某国.md
-    - 松尾芭蕉《古池》：松尾芭蕉《古池》.md
-    - 阿城《常识与通识》：阿城《常识与通识》.md
-    - 张五常-思考的方法：张五常-思考的方法.md
-    - index：index.md
-    - 德鲁克-管理自己：德鲁克-管理自己.md
-    - 查理·芒格-人类误判心理：查理·芒格-人类误判心理.md
-    - 'Luddite'-Teens-Don't-Want-Your-Likes：'Luddite'-Teens-Don't-Want-Your-Likes.md
-    - 城市生存手记：一个波斯尼亚人的内战生活总结：城市生存手记：一个波斯尼亚人的内战生活总结.md
-    - 许章润-我们当下的恐惧与期待：许章润-我们当下的恐惧与期待.md
-    - KK的68条人生建议：KK的68条人生建议.md
-    - 劳东燕-直面真实的世界：劳东燕-直面真实的世界.md
-    - 艾柯-人类为什么爱清单：艾柯-人类为什么爱清单.md
-    - 俞敏洪-度过有意义的生命：俞敏洪-度过有意义的生命.md
-    - 我有一个同事：我有一个同事.md
-    - 海明威谈写作：海明威谈写作.md
-    - 吴敬琏：中国经济的未来方向：吴敬琏：中国经济的未来方向.md
-    - 王小波-工作与人生：王小波-工作与人生.md
-    - 周保松-走进生命的学问：周保松-走进生命的学问.md
-- LANG:
+  - LANG:
     - english-listening-resource：english-listening-resource.md
     - little-fox：little-fox.md
     - index：index.md
     - black-cat：black-cat.md
-- RES:
+  - RES:
     - chinese-song-bpm：chinese-song-bpm.md
     - chinese-zodiac：chinese-zodiac.md
     - online-free-movie：online-free-movie.md
@@ -110,10 +66,10 @@ nav:
     - index：index.md
     - things-to-buy：things-to-buy.md
     - good-habits：good-habits.md
-- READ:
+  - READ:
     - index：index.md
     - 十年阅读计划：十年阅读计划.md
-- READ/LIST:
+  - READ/LIST:
     - NEA票选100本儿童书：NEA票选100本儿童书.md
     - 大家小书：大家小书.md
     - 亚马逊100本童书：亚马逊100本童书.md
@@ -124,10 +80,10 @@ nav:
     - 书单-2016公众号读者推荐数目：书单-2016公众号读者推荐数目.md
     - 卡内基奖：卡内基奖.md
     - 纽伯瑞奖：纽伯瑞奖.md
-- K:
+  - K:
     - index：index.md
     - fav-ted-talks：fav-ted-talks.md
-- K/NOTE:
+  - K/NOTE:
     - MOOC-美国文化：MOOC-美国文化.md
     - celebrity-and-morden-china：celebrity-and-morden-china.md
     - learning-how-to-learn：learning-how-to-learn.md
@@ -137,7 +93,7 @@ nav:
     - tan-jing：tan-jing.md
     - europe-history：europe-history.md
     - game-psychology：game-psychology.md
-- TECH:
+  - TECH:
     - minimalist-launchers：minimalist-launchers.md
     - nas：nas.md
     - 12-tips-to-manage-files：12-tips-to-manage-files.md
@@ -160,25 +116,24 @@ nav:
     - manage-downloaded-media：manage-downloaded-media.md
     - android-app：android-app.md
     - ffmpeg：ffmpeg.md
-- FUN:
+  - FUN:
     - index：index.md
-- FUN/GAME:
+  - FUN/GAME:
     - XBOX：XBOX.md
     - DeadCells：DeadCells.md
     - 在线小游戏：在线小游戏.md
     - 喜欢的游戏：喜欢的游戏.md
     - NS：NS.md
-- FUN/MOVIE:
+  - FUN/MOVIE:
     - 比利·怀德：比利·怀德.md
     - 库布里克：库布里克.md
     - 伊斯特伍德：伊斯特伍德.md
     - 查理·考夫曼：查理·考夫曼.md
-- WRITE:
+  - WRITE:
     - 2015：2015.md
     - 2016：2016.md
     - index：index.md
     - 2017：2017.md
-
 
 
 # 
