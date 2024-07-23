@@ -50,79 +50,56 @@ extra:
 
 nav:
 
-  - READ/LIST:
-    - index: READ/LIST/index.md
-    - NEA票选100本儿童书: NEA票选100本儿童书.md
-    - 大家小书: 大家小书.md
-    - 亚马逊100本童书: 亚马逊100本童书.md
-    - 书单-2017公众号读者推荐书目: 书单-2017公众号读者推荐书目.md
-    - 亚马逊100本必读书: 亚马逊100本必读书.md
-    - 大民大国40年40本书: 大民大国40年40本书.md
-    - 100本最佳侦探小说: 100本最佳侦探小说.md
-    - 书单-2016公众号读者推荐数目: 书单-2016公众号读者推荐数目.md
-    - 卡内基奖: 卡内基奖.md
-    - 纽伯瑞奖: 纽伯瑞奖.md
-  - K:
+ - K:
     - index: K/index.md
-    - index: index.md
-    - fav-ted-talks: fav-ted-talks.md
-  - K/NOTE:
-    - index: K/NOTE/index.md
-    - MOOC-美国文化: MOOC-美国文化.md
-    - celebrity-and-morden-china: celebrity-and-morden-china.md
-    - learning-how-to-learn: learning-how-to-learn.md
-    - justice: justice.md
-    - criminal-law: criminal-law.md
-    - chinese-novel: chinese-novel.md
-    - tan-jing: tan-jing.md
-    - europe-history: europe-history.md
-    - game-psychology: game-psychology.md
+    - MOOC-美国文化: K/MOOC-美国文化.md
+    - celebrity-and-morden-china: K/celebrity-and-morden-china.md
+    - learning-how-to-learn: K/learning-how-to-learn.md
+    - justice: K/justice.md
+    - criminal-law: K/criminal-law.md
+    - chinese-novel: K/chinese-novel.md
+    - tan-jing: K/tan-jing.md
+    - europe-history: K/europe-history.md
+    - game-psychology: K/game-psychology.md
+    - index: K/index.md
+    - fav-ted-talks: K/fav-ted-talks.md
+  - MOVIE:
+    - index: MOVIE/index.md
+    - 比利·怀德: MOVIE/比利·怀德.md
+    - 库布里克: MOVIE/库布里克.md
+    - 伊斯特伍德: MOVIE/伊斯特伍德.md
+    - index: MOVIE/index.md
+    - 查理·考夫曼: MOVIE/查理·考夫曼.md
   - TECH:
     - index: TECH/index.md
-    - minimalist-launchers: minimalist-launchers.md
-    - nas: nas.md
-    - 12-tips-to-manage-files: 12-tips-to-manage-files.md
-    - Firefox浏览器: Firefox浏览器.md
-    - hotkey-cheetsheet: hotkey-cheetsheet.md
-    - cmus: cmus.md
-    - ArchLinux: ArchLinux.md
-    - kobo: kobo.md
-    - vimwiki: vimwiki.md
-    - Obsidian: Obsidian.md
-    - 小屏手机参数对比: 小屏手机参数对比.md
-    - manage-downloaded-ebook: manage-downloaded-ebook.md
-    - win-software: win-software.md
-    - linux-software: linux-software.md
-    - kitty: kitty.md
-    - tradition-color: tradition-color.md
-    - goldendict: goldendict.md
-    - index: index.md
-    - mkdocs: mkdocs.md
-    - manage-downloaded-media: manage-downloaded-media.md
-    - android-app: android-app.md
-    - ffmpeg: ffmpeg.md
-  - FUN:
-    - index: FUN/index.md
-    - index: index.md
-  - FUN/GAME:
-    - index: FUN/GAME/index.md
-    - XBOX: XBOX.md
-    - DeadCells: DeadCells.md
-    - 在线小游戏: 在线小游戏.md
-    - 喜欢的游戏: 喜欢的游戏.md
-    - NS: NS.md
-  - FUN/MOVIE:
-    - index: FUN/MOVIE/index.md
-    - 比利·怀德: 比利·怀德.md
-    - 库布里克: 库布里克.md
-    - 伊斯特伍德: 伊斯特伍德.md
-    - 查理·考夫曼: 查理·考夫曼.md
+    - minimalist-launchers: TECH/minimalist-launchers.md
+    - nas: TECH/nas.md
+    - 12-tips-to-manage-files: TECH/12-tips-to-manage-files.md
+    - Firefox浏览器: TECH/Firefox浏览器.md
+    - hotkey-cheetsheet: TECH/hotkey-cheetsheet.md
+    - cmus: TECH/cmus.md
+    - ArchLinux: TECH/ArchLinux.md
+    - kobo: TECH/kobo.md
+    - vimwiki: TECH/vimwiki.md
+    - Obsidian: TECH/Obsidian.md
+    - 小屏手机参数对比: TECH/小屏手机参数对比.md
+    - manage-downloaded-ebook: TECH/manage-downloaded-ebook.md
+    - win-software: TECH/win-software.md
+    - linux-software: TECH/linux-software.md
+    - kitty: TECH/kitty.md
+    - tradition-color: TECH/tradition-color.md
+    - goldendict: TECH/goldendict.md
+    - index: TECH/index.md
+    - mkdocs: TECH/mkdocs.md
+    - manage-downloaded-media: TECH/manage-downloaded-media.md
+    - android-app: TECH/android-app.md
+    - ffmpeg: TECH/ffmpeg.md
   - WRITE:
     - index: WRITE/index.md
-    - 2015: 2015.md
-    - 2016: 2016.md
-    - index: index.md
-    - 2017: 2017.md
+    - 2015: WRITE/2015.md
+    - 2016: WRITE/2016.md
+    - index: WRITE/index.md
+    - 2017: WRITE/2017.md
 
 
 

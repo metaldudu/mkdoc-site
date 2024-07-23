@@ -12,7 +12,7 @@ def list_markdown_files(directory):
             files_list.append(f"    - index: {directory_name}/index.md")
             # 添加文件列表
             for file in markdown_files:
-                files_list.append(f"    - {file.split('.')[0]}: {file}")
+                files_list.append(f"    - {file.split('.')[0]}: {directory_name}/{file}")
 
     return files_list
 
