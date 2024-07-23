@@ -49,8 +49,8 @@ extra:
 # 导航
 
 nav:
-
- - K:
+  - index: index.md
+  - K:
     - index: K/index.md
     - MOOC-美国文化: K/MOOC-美国文化.md
     - celebrity-and-morden-china: K/celebrity-and-morden-china.md
