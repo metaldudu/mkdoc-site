@@ -50,12 +50,8 @@ extra:
 
 nav:
 
-  - LANG:
-    - english-listening-resource: english-listening-resource.md
-    - little-fox: little-fox.md
-    - index: index.md
-    - black-cat: black-cat.md
   - RES:
+    - index:RES/index.md
     - chinese-song-bpm: chinese-song-bpm.md
     - chinese-zodiac: chinese-zodiac.md
     - online-free-movie: online-free-movie.md
@@ -67,9 +63,11 @@ nav:
     - things-to-buy: things-to-buy.md
     - good-habits: good-habits.md
   - READ:
+    - index:READ/index.md
     - index: index.md
     - 十年阅读计划: 十年阅读计划.md
   - READ/LIST:
+    - index:READ/LIST/index.md
     - NEA票选100本儿童书: NEA票选100本儿童书.md
     - 大家小书: 大家小书.md
     - 亚马逊100本童书: 亚马逊100本童书.md
@@ -81,9 +79,11 @@ nav:
     - 卡内基奖: 卡内基奖.md
     - 纽伯瑞奖: 纽伯瑞奖.md
   - K:
+    - index:K/index.md
     - index: index.md
     - fav-ted-talks: fav-ted-talks.md
   - K/NOTE:
+    - index:K/NOTE/index.md
     - MOOC-美国文化: MOOC-美国文化.md
     - celebrity-and-morden-china: celebrity-and-morden-china.md
     - learning-how-to-learn: learning-how-to-learn.md
@@ -93,6 +93,53 @@ nav:
     - tan-jing: tan-jing.md
     - europe-history: europe-history.md
     - game-psychology: game-psychology.md
+  - TECH:
+    - index:TECH/index.md
+    - minimalist-launchers: minimalist-launchers.md
+    - nas: nas.md
+    - 12-tips-to-manage-files: 12-tips-to-manage-files.md
+    - Firefox浏览器: Firefox浏览器.md
+    - hotkey-cheetsheet: hotkey-cheetsheet.md
+    - cmus: cmus.md
+    - ArchLinux: ArchLinux.md
+    - kobo: kobo.md
+    - vimwiki: vimwiki.md
+    - Obsidian: Obsidian.md
+    - 小屏手机参数对比: 小屏手机参数对比.md
+    - manage-downloaded-ebook: manage-downloaded-ebook.md
+    - win-software: win-software.md
+    - linux-software: linux-software.md
+    - kitty: kitty.md
+    - tradition-color: tradition-color.md
+    - goldendict: goldendict.md
+    - index: index.md
+    - mkdocs: mkdocs.md
+    - manage-downloaded-media: manage-downloaded-media.md
+    - android-app: android-app.md
+    - ffmpeg: ffmpeg.md
+  - FUN:
+    - index:FUN/index.md
+    - index: index.md
+  - FUN/GAME:
+    - index:FUN/GAME/index.md
+    - XBOX: XBOX.md
+    - DeadCells: DeadCells.md
+    - 在线小游戏: 在线小游戏.md
+    - 喜欢的游戏: 喜欢的游戏.md
+    - NS: NS.md
+  - FUN/MOVIE:
+    - index:FUN/MOVIE/index.md
+    - 比利·怀德: 比利·怀德.md
+    - 库布里克: 库布里克.md
+    - 伊斯特伍德: 伊斯特伍德.md
+    - 查理·考夫曼: 查理·考夫曼.md
+  - WRITE:
+    - index:WRITE/index.md
+    - 2015: 2015.md
+    - 2016: 2016.md
+    - index: index.md
+    - 2017: 2017.md
+
 
 
 # 
