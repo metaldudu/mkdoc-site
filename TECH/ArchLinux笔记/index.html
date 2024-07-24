@@ -1,0 +1,4257 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="老杜的笔记仓库">
+      
+      
+        <meta name="author" content="MetalDudu">
+      
+      
+        <link rel="canonical" href="https://metaldudu.github.io/notes/TECH/ArchLinux%E7%AC%94%E8%AE%B0/">
+      
+      
+        <link rel="prev" href="../%E6%9E%81%E7%AE%80%E5%90%AF%E5%8A%A8%E5%99%A8%E9%80%89%E6%8B%A9/">
+      
+      
+        <link rel="next" href="../GoldenDict/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.30">
+    
+    
+      
+        <title>Arch linux 笔记 - 老杜的笔记仓库</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.3cba04c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#archlinux" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="老杜的笔记仓库" class="md-header__button md-logo" aria-label="老杜的笔记仓库" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            老杜的笔记仓库
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Arch linux 笔记
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="deep-orange"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="orange"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../REPOST/" class="md-tabs__link">
+          
+  
+    
+  
+  REPOST
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../LANG/" class="md-tabs__link">
+          
+  
+    
+  
+  LANG
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../GAME/" class="md-tabs__link">
+          
+  
+    
+  
+  GAME
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../RES/" class="md-tabs__link">
+          
+  
+    
+  
+  RES
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../READ/" class="md-tabs__link">
+          
+  
+    
+  
+  READ
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../COURSE/" class="md-tabs__link">
+          
+  
+    
+  
+  COURSE
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+    
+  
+  TECH
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../WRITE/" class="md-tabs__link">
+          
+  
+    
+  
+  WRITE
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="老杜的笔记仓库" class="md-nav__button md-logo" aria-label="老杜的笔记仓库" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    老杜的笔记仓库
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../REPOST/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    REPOST
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            REPOST
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REPOST/%E8%83%BD%E9%87%8F%E7%AE%A1%E7%90%86%E8%80%8C%E9%9D%9E%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    能量管理而非时间管理
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REPOST/%E8%BF%99%E9%B8%A1%E8%9B%8B%E7%9C%9F%E9%9A%BE%E5%90%83/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    这鸡蛋真难吃
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REPOST/%E4%B8%89%E4%B8%AA%E9%97%AE%E9%A2%98/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    三个问题
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REPOST/%E8%B4%BE%E6%A8%9F%E6%9F%AF%EF%BC%9A%E5%81%9A%E4%BA%86%E4%B8%80%E4%B8%AA%E6%B1%89%E5%A5%B8%E6%A2%A6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    贾樟柯：做了一个汉奸梦
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REPOST/%E7%88%B1%E4%B8%81%E5%A0%A1%E7%AC%91%E8%AF%9D/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    爱丁堡笑话
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REPOST/%E4%BD%99%E5%85%89%E4%B8%AD%EF%BC%9A%E6%80%8E%E6%A0%B7%E6%94%B9%E8%BF%9B%E8%8B%B1%E5%BC%8F%E4%B8%AD%E6%96%87/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    余光中：怎样改进英式中文
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REPOST/%E5%BC%A0%E4%BA%94%E5%B8%B8%EF%BC%9A%E6%80%9D%E8%80%83%E7%9A%84%E6%96%B9%E6%B3%95/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    张五常：思考的方法
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REPOST/%E5%85%B0%E8%BF%AA%E6%B3%A2%E8%AE%B8%E6%9C%80%E5%90%8E%E7%9A%84%E6%BC%94%E8%AE%B2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    兰迪波许最后的演讲
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REPOST/%E8%8B%8F%E8%81%94%E7%AC%91%E8%AF%9D/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    苏联笑话
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REPOST/%E6%9F%A5%E7%90%86%C2%B7%E8%8A%92%E6%A0%BC%E5%9C%A8%E5%8D%97%E5%8A%A0%E5%B7%9E%E5%A4%A7%E5%AD%A6%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC%E4%B8%8A%E7%9A%84%E6%BC%94%E8%AE%B2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    查理·芒格在南加州大学毕业典礼上的演讲
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REPOST/%E5%91%A8%E4%BF%9D%E6%9D%BE%EF%BC%9A%E8%B5%B0%E8%BF%9B%E7%94%9F%E5%91%BD%E7%9A%84%E5%AD%A6%E9%97%AE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    周保松：走进生命的学问
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REPOST/%E5%AE%AB%E6%B3%BD%E8%B4%A4%E6%B2%BB%EF%BC%9A%E4%B8%8D%E7%95%8F%E9%A3%8E%E9%9B%A8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    宫泽贤治：不畏风雨
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REPOST/%E5%BE%B7%E9%B2%81%E5%85%8B%EF%BC%9A%E7%AE%A1%E7%90%86%E8%87%AA%E5%B7%B1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    德鲁克：管理自己
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REPOST/%E6%9F%A5%E7%90%86%C2%B7%E8%8A%92%E6%A0%BC%EF%BC%9A%E4%BA%BA%E7%B1%BB%E8%AF%AF%E5%88%A4%E5%BF%83%E7%90%86/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    查理·芒格：人类误判心理
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REPOST/%E4%B9%94%E5%B8%83%E6%96%AF2005%E5%B9%B4%E5%9C%A8%E6%96%AF%E5%9D%A6%E7%A6%8F%E5%A4%A7%E5%AD%A6%E7%9A%84%E6%BC%94%E8%AE%B2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    乔布斯2005年在斯坦福大学的演讲
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REPOST/%E6%B8%A9%E5%AE%B6%E5%AE%9D%EF%BC%9A%E6%88%91%E7%9A%84%E6%AF%8D%E4%BA%B2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    温家宝：我的母亲
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REPOST/%E8%8C%85%E4%BA%8E%E8%BD%BC%EF%BC%9A%E6%95%99%E8%82%B2%E7%9A%84%E7%9B%AE%E7%9A%84%E6%98%AF%E4%BB%80%E4%B9%88/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    茅于轼：教育的目的是什么
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REPOST/%E4%BA%94%E7%A5%96%E6%B3%95%E6%BC%94%E8%AE%B2%E7%9A%84%E7%A6%85%E5%AE%97%E6%95%85%E4%BA%8B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    五祖法演讲的禅宗故事
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REPOST/%E7%8E%8B%E5%B0%8F%E6%B3%A2%EF%BC%9A%E5%B7%A5%E4%BD%9C%E4%B8%8E%E4%BA%BA%E7%94%9F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    王小波：工作与人生
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REPOST/%E7%8E%8B%E6%99%93%E6%98%8E%EF%BC%9A%E8%BF%99%E6%A0%B7%E7%9A%84%E4%BA%BA%E5%A4%9A%E4%BA%86%E7%A4%BE%E4%BC%9A%E5%9D%8F%E4%B8%8D%E5%88%B0%E5%93%AA%E9%87%8C%E5%8E%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    王晓明：这样的人多了社会坏不到哪里去
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REPOST/%E4%BA%9A%E4%BC%A6%C2%B7%E6%96%AF%E6%B2%83%E8%8C%A8%EF%BC%9A%E6%80%8E%E6%A0%B7%E6%9C%89%E6%95%88%E5%88%A9%E7%94%A8%E6%97%B6%E9%97%B4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    亚伦·斯沃茨：怎样有效利用时间
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REPOST/%E6%B2%A1%E4%BA%BA%E6%87%82%E6%9F%90%E5%9B%BD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    没人懂某国
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REPOST/%E5%8A%B3%E4%B8%9C%E7%87%95%EF%BC%9A%E7%9B%B4%E9%9D%A2%E7%9C%9F%E5%AE%9E%E7%9A%84%E4%B8%96%E7%95%8C/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    劳东燕：直面真实的世界
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REPOST/%E6%9B%BE%E5%A5%87%E5%B3%B0%EF%BC%9A%E6%88%91%E6%89%80%E7%8A%AF%E8%BF%87%E7%9A%84%E9%94%99%E8%AF%AF/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    曾奇峰：我所犯过的错误
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REPOST/%E7%A7%A6%E6%99%96%EF%BC%9A30%20%E5%B9%B4%E3%80%8160%20%E5%B9%B4%E3%80%81120%20%E5%B9%B4%E2%80%94%E2%80%94%E4%B8%AD%E5%9B%BD%E5%8E%86%E5%8F%B2%E7%9A%84%E5%BB%B6%E7%BB%AD%E4%B8%8E%E6%96%AD%E8%A3%82/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    秦晖：30 年、60 年、120 年——中国历史的延续与断裂
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REPOST/%E7%A7%A6%E6%99%96%EF%BC%9A%E5%85%B3%E4%BA%8E%E6%96%87%E9%9D%A9%E7%9A%84%E8%8B%A5%E5%B9%B2%E9%97%AE%E9%A2%98/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    秦晖：关于文革的若干问题
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REPOST/%E8%8A%92%E6%A0%BC%EF%BC%9A%E8%AF%B7%E5%85%88%E6%8A%95%E8%B5%84%E4%BD%A0%E8%87%AA%E5%B7%B1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    芒格：请先投资你自己
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REPOST/%E8%89%BE%E6%9F%AF%EF%BC%9A-%E4%BA%BA%E7%B1%BB%E4%B8%BA%E4%BB%80%E4%B9%88%E7%88%B1%E6%B8%85%E5%8D%95/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    艾柯：-人类为什么爱清单
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REPOST/%E4%BD%95%E4%BC%9F%EF%BC%9A%E2%80%9C%E4%B8%AD%E5%9B%BD%E5%88%B6%E9%80%A0%E2%80%9D%E5%A4%96%E4%BA%A4%E7%9A%84%E5%85%B4%E8%B5%B7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    何伟：“中国制造”外交的兴起
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REPOST/%E4%BF%9E%E6%95%8F%E6%B4%AA%EF%BC%9A%E5%BA%A6%E8%BF%87%E6%9C%89%E6%84%8F%E4%B9%89%E7%9A%84%E7%94%9F%E5%91%BD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    俞敏洪：度过有意义的生命
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REPOST/%E5%9F%8E%E5%B8%82%E7%94%9F%E5%AD%98%E6%89%8B%E8%AE%B0%EF%BC%9A%E4%B8%80%E4%B8%AA%E6%B3%A2%E6%96%AF%E5%B0%BC%E4%BA%9A%E4%BA%BA%E7%9A%84%E5%86%85%E6%88%98%E7%94%9F%E6%B4%BB%E6%80%BB%E7%BB%93/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    城市生存手记：一个波斯尼亚人的内战生活总结
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REPOST/%E8%AE%B8%E7%AB%A0%E6%B6%A6-%E6%88%91%E4%BB%AC%E5%BD%93%E4%B8%8B%E7%9A%84%E6%81%90%E6%83%A7%E4%B8%8E%E6%9C%9F%E5%BE%85/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    许章润-我们当下的恐惧与期待
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REPOST/KK%E7%9A%8468%E6%9D%A1%E4%BA%BA%E7%94%9F%E5%BB%BA%E8%AE%AE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    KK的68条人生建议
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REPOST/%E6%B5%B7%E6%98%8E%E5%A8%81%E8%B0%88%E5%86%99%E4%BD%9C/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    海明威谈写作
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REPOST/%E5%90%B4%E6%95%AC%E7%90%8F%EF%BC%9A%E4%B8%AD%E5%9B%BD%E7%BB%8F%E6%B5%8E%E7%9A%84%E6%9C%AA%E6%9D%A5%E6%96%B9%E5%90%91/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    吴敬琏：中国经济的未来方向
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../LANG/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    LANG
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            LANG
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LANG/%E5%88%86%E7%BA%A7%E9%98%85%E8%AF%BB%EF%BC%9A%E9%BB%91%E7%8C%AB%E6%9C%89%E5%A3%B0%E5%90%8D%E8%91%97/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    分级阅读：黑猫有声名著
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LANG/%E8%8B%B1%E8%AF%AD%E5%90%AC%E5%8A%9B%E8%B5%84%E6%BA%90/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    英语听力资源
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../GAME/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    GAME
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            GAME
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../GAME/XBOX/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    XBOX
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../GAME/%E6%AD%BB%E4%BA%A1%E7%BB%86%E8%83%9E%E5%9C%B0%E5%9B%BE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    死亡细胞地图
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../GAME/%E5%9C%A8%E7%BA%BF%E5%B0%8F%E6%B8%B8%E6%88%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    在线小游戏
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../GAME/%E5%96%9C%E6%AC%A2%E7%9A%84%E6%B8%B8%E6%88%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    喜欢的游戏
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../GAME/NS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../RES/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    RES
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            RES
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RES/%E5%BD%B1%E8%A7%86%E4%B8%8B%E8%BD%BD%E7%BD%91%E7%AB%99/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    影视下载网站
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RES/online-free-movie/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    online-free-movie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RES/%E6%80%A7%E4%BB%B7%E6%AF%94%E7%89%A9%E5%93%81%E6%94%B6%E9%9B%86/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    性价比物品收集
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RES/%E4%B8%AD%E6%96%87%E6%AD%8C%E6%9B%B2bpm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    中文歌曲bpm
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RES/%F0%9F%8D%8A%E7%BD%91%E7%AB%99%E6%90%9C%E7%BD%97/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🍊网站搜罗
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RES/%E5%A4%A9%E5%B9%B2%E5%9C%B0%E6%94%AF/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    天干地支
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RES/%E5%85%8D%E8%B4%B9%E5%AD%97%E4%BD%93/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    免费字体
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RES/%E7%94%B5%E5%AD%90%E4%B9%A6%E4%B8%8B%E8%BD%BD%E7%BD%91%E7%AB%99/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    电子书下载网站
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RES/%E5%A5%BD%E4%B9%A0%E6%83%AF%E6%94%B6%E9%9B%86/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    好习惯收集
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../READ/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    READ
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            READ
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../READ/NEA%E7%A5%A8%E9%80%89100%E6%9C%AC%E5%84%BF%E7%AB%A5%E4%B9%A6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NEA票选100本儿童书
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../READ/%E5%A4%A7%E5%AE%B6%E5%B0%8F%E4%B9%A6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    大家小书
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../READ/%E4%BA%9A%E9%A9%AC%E9%80%8A100%E6%9C%AC%E7%AB%A5%E4%B9%A6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    亚马逊100本童书
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../READ/%E4%B9%A6%E5%8D%95-2017%E5%85%AC%E4%BC%97%E5%8F%B7%E8%AF%BB%E8%80%85%E6%8E%A8%E8%8D%90%E4%B9%A6%E7%9B%AE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    书单-2017公众号读者推荐书目
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../READ/%E4%BA%9A%E9%A9%AC%E9%80%8A100%E6%9C%AC%E5%BF%85%E8%AF%BB%E4%B9%A6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    亚马逊100本必读书
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../READ/%E5%A4%A7%E6%B0%91%E5%A4%A7%E5%9B%BD40%E5%B9%B440%E6%9C%AC%E4%B9%A6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    大民大国40年40本书
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../READ/100%E6%9C%AC%E6%9C%80%E4%BD%B3%E4%BE%A6%E6%8E%A2%E5%B0%8F%E8%AF%B4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    100本最佳侦探小说
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../READ/%E4%B9%A6%E5%8D%95-2016%E5%85%AC%E4%BC%97%E5%8F%B7%E8%AF%BB%E8%80%85%E6%8E%A8%E8%8D%90%E6%95%B0%E7%9B%AE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    书单-2016公众号读者推荐数目
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../READ/%E5%8D%A1%E5%86%85%E5%9F%BA%E5%A5%96/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    卡内基奖
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../READ/%E7%BA%BD%E4%BC%AF%E7%91%9E%E5%A5%96/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    纽伯瑞奖
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../READ/%E5%8D%81%E5%B9%B4%E9%98%85%E8%AF%BB%E8%AE%A1%E5%88%92/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    十年阅读计划
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../COURSE/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    COURSE
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            COURSE
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../COURSE/%E5%85%AC%E6%AD%A3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    公正
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../COURSE/%E6%88%91%E5%96%9C%E6%AC%A2%E7%9A%84TED%E6%BC%94%E8%AE%B2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    我喜欢的TED演讲
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../COURSE/%E4%B8%AD%E5%9B%BD%E4%BC%A0%E5%AA%92%E5%A4%A7%E5%AD%A6-%E6%B8%B8%E6%88%8F%E5%BF%83%E7%90%86%E5%AD%A6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    中国传媒大学-游戏心理学
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../COURSE/%E5%88%91%E6%B3%95%E6%82%96%E8%AE%BA%E5%8D%81%E8%AE%B2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    刑法悖论十讲
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../COURSE/%E5%90%8D%E4%BA%BA%E4%B8%8E%E8%BF%91%E4%BB%A3%E4%B8%AD%E5%9B%BD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    名人与近代中国
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../COURSE/%E4%B8%96%E7%95%8C%E5%8D%8E%E6%96%87%E6%96%87%E5%AD%A6%E7%BB%8F%E5%85%B8%E6%AC%A3%E8%B5%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    世界华文文学经典欣赏
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../COURSE/%E5%8F%AF%E6%B1%97%E5%AD%A6%E9%99%A2%E6%AC%A7%E6%B4%B2%E5%8F%B2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    可汗学院欧洲史
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../COURSE/Learning%20How%20To%20Learn/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Learning How To Learn
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../COURSE/%E7%BE%8E%E5%9B%BD%E6%96%87%E5%8C%96/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    美国文化
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../COURSE/%E5%9D%9B%E7%BB%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    坛经
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    TECH
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            TECH
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Kobo%E7%94%B5%E7%BA%B8%E4%B9%A6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kobo电纸书
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Firefox%E6%B5%8F%E8%A7%88%E5%99%A8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firefox浏览器
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../NAS%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NAS搭建笔记
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hotkey-cheetsheet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    hotkey-cheetsheet
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%94%B5%E8%84%91%E6%96%87%E4%BB%B6%E6%95%B4%E7%90%86%E7%9A%8412%E4%B8%AAtips/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    电脑文件整理的12个tips
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cmus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    cmus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vimwiki/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    vimwiki
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Obsidian/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Obsidian
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%B0%8F%E5%B1%8F%E6%89%8B%E6%9C%BA%E5%8F%82%E6%95%B0%E5%AF%B9%E6%AF%94/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    小屏手机参数对比
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kitty/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    kitty
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%AE%89%E5%8D%93APP%E6%8E%A8%E8%8D%90/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    安卓APP推荐
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Windows%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Windows常用软件
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mkdocs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    mkdocs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../manage-downloaded-media/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    manage-downloaded-media
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%9E%81%E7%AE%80%E5%90%AF%E5%8A%A8%E5%99%A8%E9%80%89%E6%8B%A9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    极简启动器选择
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    ArchLinux笔记
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    ArchLinux笔记
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      系统安装
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      网络
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      系统更新
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="系统更新">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mirrors" class="md-nav__link">
+    <span class="md-ellipsis">
+      mirrors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pacman" class="md-nav__link">
+    <span class="md-ellipsis">
+      pacman错误
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#yay" class="md-nav__link">
+    <span class="md-ellipsis">
+      yay
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xfce4" class="md-nav__link">
+    <span class="md-ellipsis">
+      xfce4设置
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="xfce4设置">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      显示
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      音频
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      主题
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      壁纸
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      面板
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      快捷键
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      字体
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      输入法
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      软件及配置
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="软件及配置">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      代理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      启动器
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      文件管理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      编辑器
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      外语学习
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      图片
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      影音
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="影音">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mpv" class="md-nav__link">
+    <span class="md-ellipsis">
+      mpv显示两个字幕
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      电子书
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="电子书">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pdftk" class="md-nav__link">
+    <span class="md-ellipsis">
+      pdftk
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qpdf" class="md-nav__link">
+    <span class="md-ellipsis">
+      qpdf
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      浏览器
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="浏览器">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#telegram" class="md-nav__link">
+    <span class="md-ellipsis">
+      浏览器无法打开telegram 链接
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rss" class="md-nav__link">
+    <span class="md-ellipsis">
+      RSS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      下载
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      即时通讯
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      网盘
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#syncthing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Syncthing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ssh-and-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      SSH and git
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      其他问题
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="其他问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      环境变量
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      电源休眠
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      错误
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../GoldenDict/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GoldenDict
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ffmpeg/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ffmpeg
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%94%B5%E5%AD%90%E4%B9%A6%E7%9B%B8%E5%85%B3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    电子书相关
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Linux%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linux软件推荐
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../WRITE/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    WRITE
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            WRITE
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WRITE/2015/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2015
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WRITE/2016/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2016
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WRITE/2017/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2017
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      系统安装
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      网络
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      系统更新
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="系统更新">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mirrors" class="md-nav__link">
+    <span class="md-ellipsis">
+      mirrors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pacman" class="md-nav__link">
+    <span class="md-ellipsis">
+      pacman错误
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#yay" class="md-nav__link">
+    <span class="md-ellipsis">
+      yay
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xfce4" class="md-nav__link">
+    <span class="md-ellipsis">
+      xfce4设置
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="xfce4设置">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      显示
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      音频
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      主题
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      壁纸
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      面板
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      快捷键
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      字体
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      输入法
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      软件及配置
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="软件及配置">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      代理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      启动器
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      文件管理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      编辑器
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      外语学习
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      图片
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      影音
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="影音">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mpv" class="md-nav__link">
+    <span class="md-ellipsis">
+      mpv显示两个字幕
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      电子书
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="电子书">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pdftk" class="md-nav__link">
+    <span class="md-ellipsis">
+      pdftk
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qpdf" class="md-nav__link">
+    <span class="md-ellipsis">
+      qpdf
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      浏览器
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="浏览器">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#telegram" class="md-nav__link">
+    <span class="md-ellipsis">
+      浏览器无法打开telegram 链接
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rss" class="md-nav__link">
+    <span class="md-ellipsis">
+      RSS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      下载
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      即时通讯
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      网盘
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#syncthing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Syncthing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ssh-and-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      SSH and git
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      其他问题
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="其他问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      环境变量
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      电源休眠
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      错误
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="archlinux">Archlinux笔记</h1>
+<h2 id="_1">系统安装</h2>
+<p>按照wiki走一遍，不行就再来一遍。有可能踩坑：</p>
+<ul>
+<li>和win10共享ESP分区的话，100Mb 不够用，而且win10更新会导致 grub 错误。建议扩大 ESP 分区</li>
+<li>命令行状态下要装好网络包</li>
+<li>自动挂载移动硬盘和U盘，安装 <code>ntfs-3g udevil</code> ，同时当前用户要增加权限。解决弹出提示输入密码的问题：<a href="https://askubuntu.com/questions/552503/stop-asking-for-authentication-to-mount-usb-stick">链接</a></li>
+</ul>
+<h2 id="_2">网络</h2>
+<p>查询本机ip： <code>$curl ipinfo.io</code></p>
+<h2 id="_3">系统更新</h2>
+<h3 id="mirrors">mirrors</h3>
+<p>编辑：<code>/etc/pacman.d/mirrorlist</code></p>
+<p>生成地址： <a href="https://archlinux.org/mirrorlist/">https://archlinux.org/mirrorlist/</a></p>
+<h3 id="pacman">pacman错误</h3>
+<p>invalid pgp key错误解决 : <code>$ sudo pacman-key --refresh-keys</code></p>
+<p>pacman -Syu 升级系统
+pacman -Syy 同步软件列表
+pacman -Scc 清理软件包
+pacman -S xxx 安装
+pacman -Ss xxx 查询
+pacman -R xxx 卸载
+pacman -Rs xxx 卸载包以及依赖包
+pacman -Rns xxx 删除包且删除配置文件
+pacman -Qs xxx 查询已安装包
+pacman -Rs $(sudo pacman -Qdtq) 删除孤儿包</p>
+<h3 id="yay">yay</h3>
+<p><code>yay -Ps</code>    现状展示
+<code>yay -Qu</code> 查看待升级的包
+<code>yay -Sc</code>    清理</p>
+<h2 id="xfce4">xfce4设置</h2>
+<h3 id="_4">显示</h3>
+<p>使用2k显示器开缩放会很大，可以调整 Settings - Appearance - Fonts - DPI 到130左右</p>
+<h3 id="_5">音频</h3>
+<p>蓝牙支持：</p>
+<p>sudo pacman -S bluez bluez-utils blueman pulseaudio-bluetooth</p>
+<p>sudo systemctl restart bluetooth.service</p>
+<h3 id="_6">主题</h3>
+<p>使用暗色主题：<code>pacman -S arc-gtk-theme</code> ，图标选择： papirus-icon-theme 。所有的图标在：<code>/usr/share/icons/</code> 修改文件夹颜色 <a href="https://github.com/PapirusDevelopmentTeam/papirus-folders">papirus-folders</a></p>
+<h3 id="_7">壁纸</h3>
+<p>壁纸位置在：~/.local/share/xfce4/backdrops/</p>
+<h3 id="_8">面板</h3>
+<ul>
+<li>声音：安装 alsa-utils 和  pulseaudio。安装　<code>xfce4-pulseaudio-plugin</code> ，面板添加音量图标</li>
+<li>任务栏靠左后，可以设置时钟显示，参考<a href="">这里</a> ，自定义时间格式为： %H%n⋅⋅%n%M</li>
+<li>系统栏图标大小不合适，参考<a href="https://bbs.archlinux.org/viewtopic.php?id=222292">这里</a></li>
+<li>【故障】桌面窗口标题栏消失，无法拖动和改变大小，或者面板消失。解决方法：<code>xfwm4 --replace &amp;</code></li>
+<li></li>
+</ul>
+<h3 id="_9">快捷键</h3>
+<ul>
+<li>窗口靠边：win+方向键</li>
+<li>隐藏所有窗口：win+D</li>
+<li>启动器，使用  <a href="https://github.com/Ulauncher/">Ulauncher</a> ：win+~</li>
+<li>截图，使用 Flameshot ：<code>flameshot gui &gt; win+3</code></li>
+<li>解决 xfce4-terminal 填充空隙问题 <a href="https://forum.xfce.org/viewtopic.php?pid=66277#p66277">url</a></li>
+</ul>
+<h3 id="_10">字体</h3>
+<p>参考这个： https://wiki.archlinuxcn.org/wiki/%E5%AD%97%E4%BD%93%E9%85%8D%E7%BD%AE/%E4%B8%AD%E6%96%87</p>
+<p>查看中文字体： <code>fc-list :lang=zh</code> 可以看到字体名，便于配置软件 
+<code>fc-cache -fv</code> 刷新字体显示</p>
+<pre><code>sudo pacman -S ttf-dejavu wqy-microhei noto-fonts-emoji
+</code></pre>
+<p>不要安装谷歌东亚字体，会造成混乱：<code>noto-fonts-cjk</code> 安装思源黑体和宋体：</p>
+<pre><code>sudo pacman -S adobe-source-han-sans-cn-fonts  adobe-source-han-serif-cn-fonts  
+</code></pre>
+<ul>
+<li><a href="https://github.com/laishulu/Sarasa-Mono-SC-Nerd">简体中文等距更纱黑体+Nerd图标字体库</a> 适合终端中英文混排使用  <code>yay -S nerd-fonts-sarasa-mono</code></li>
+<li>编程字体：<a href="https://github.com/tonsky/FiraCode">Fira Code</a></li>
+</ul>
+<p>自己安装的字体放到 <code>~/.local/share/fonts</code></p>
+<p>适合阅读和电纸书的字体</p>
+<ul>
+<li><a href="https://github.com/lxgw/LxgwWenKai">霞鹜文楷</a>（免费）选择 霞鹜文楷屏幕阅读版</li>
+<li>方正屏显雅宋（付费，屏幕显示优化） FZPingXYSK.TTF</li>
+<li>方正宋刻本秀楷简体 </li>
+<li>筑紫明朝体，适合繁体字</li>
+<li>京華老宋体</li>
+</ul>
+<h2 id="_11">输入法</h2>
+<p>选择 fcitx5 和 rime ，使用：</p>
+<ul>
+<li>四叶草拼音方案 https://github.com/fkxxyz/rime-cloverpinyin 不喜欢四叶草图标，可以修改 <code>~.local/share/fcitx5/rime/build/clover.schema.yaml</code> 文件里的 🍀 为其他字符，比如 🐼</li>
+<li>自己修改了一份皮肤 <a href="https://github.com/metaldudu/fcitx5-simple-white-theme">metaldudu/fcitx5-simple-white-theme</a></li>
+</ul>
+<p>比起默认的拼音更适合简体中文用户。一些快捷键：</p>
+<ul>
+<li>F4 设置菜单</li>
+<li>shift+空格 切换全角/半角</li>
+<li>ctrl+shift+3 切换emoji</li>
+</ul>
+<h2 id="_12">软件及配置</h2>
+<h3 id="_13">代理</h3>
+<p>terminal使用代理</p>
+<pre><code>alias setproxy=&quot;export ALL_PROXY=socks5://127.0.0.1:1080&quot;
+alias unsetproxy=&quot;unset ALL_PROXY&quot;
+aliass ip=&quot;curl ipinfo.io&quot;
+</code></pre>
+<h3 id="_14">启动器</h3>
+<p><a href="https://ulauncher.io/">Ulauncher</a>，简单高效。无论用哪个平台都应该又一款趁手的启动器。</p>
+<p>支持使用 <code>goldendict $1</code> 来调用 goldendict 查词</p>
+<h3 id="_15">文件管理</h3>
+<p>压缩 <code>pacman -S thunar-archive-plugin</code>  ，文件搜索：catfish 。访问共享，安装 <code>gvfs-smb</code></p>
+<p>Thunar 支持 custom actions ，参考<a href="https://www.reddit.com/r/xfce/comments/9649y4/nice_thunar_trick/">这里</a>，可以在右键菜单添加一个“复制当前目录”</p>
+<p><code>echo -n "%F" | xclip -selection c</code></p>
+<p>比如用 GIMP 打开图片，添加： <code>gimp %f</code></p>
+<h3 id="_16">编辑器</h3>
+<p>Typora 收费后，直接全部用 Obsidian 解决笔记问题，markdown无敌。Code-OSS 编辑多个文件，单个文件用系统自带的 mousepad 打开。LibreOffice 或者用腾讯在线文档对付 msoffice 格式。</p>
+<p><code>sudo pacman -S libreoffice-still libreoffice-still-zh-cn</code></p>
+<h3 id="_17">外语学习</h3>
+<p>GoldenDict （有分支强化版本 <a href="https://github.com/xiaoyifang/goldendict-ng">GoldenDict-ng</a>） 和 [[anki]] 装好每天都用</p>
+<h3 id="_18">图片</h3>
+<p>编辑器用 GIMP，用惯了也还好。看图用 ristretto ，看漫画可以用 MComix 或 Foliate。截图用火焰截图 <a href="https://github.com/lupoDharkael/flameshot">Flameshot</a> ，截图可以绑定快捷键到 <code>flameshot gui</code> </p>
+<p>延时6秒截图命令： <code>flameshot gui -d 6000</code></p>
+<h3 id="_19">影音</h3>
+<ul>
+<li>MPV 主力播放。 VLC 可以看网络直播流，也适合播放整个文件夹，VLC可以批量转换音频视频，也可以订阅 podcast</li>
+<li>音乐播放用 Audacious ，专辑管理用 <a href="https://quodlibet.readthedocs.io/en/latest/">AQuod Libet</a>，需要编辑音乐信息装一个 Kid3。听在线音乐可以用 <a href="https://listen1.github.io/listen1/">Listen 1 音乐播放器</a> 。</li>
+<li>录音用  Audacity</li>
+</ul>
+<h4 id="mpv">mpv显示两个字幕</h4>
+<p>mpv some-video.mp4 --sub-file=sub1.srt --sub-file=sub2.srt --secondary-sid=2</p>
+<p>在线工具合并两个字幕： https://easypronunciation.com/zh/merge-two-subtitle-files-online</p>
+<p>mpv调整字幕大小</p>
+<ul>
+<li>shitft + g : to increase font size</li>
+<li>shitft + f : to decrease font size</li>
+</ul>
+<p>官方快捷键： https://mpv.io/manual/master/</p>
+<h3 id="_20">电子书</h3>
+<p>Calibre 安装好，导入书库。需要编辑epub 可以安装 Sigil，有打包电子书的需要装 pandoc ，安装 <code>yay -S pandoc-bin</code></p>
+<p>pdf浏览就装 Evince ，图形化的PDF剪裁工具 <a href="http://arminstraub.com/software/krop">krop</a> </p>
+<h4 id="pdftk">pdftk</h4>
+<ul>
+<li>提取pdf信息 <code>pdftk 1.pdf dump_data output out.txt</code></li>
+<li>更新pdf信息 <code>pdftk 1.pdf update_info out.txt output new.pdf</code></li>
+<li>合并 <code>pdftk file1.pdf file2.pdf cat output output.pdf</code></li>
+</ul>
+<h4 id="qpdf">qpdf</h4>
+<ul>
+<li>拆分pdf  <code>qpdf --empty --pages infile.pdf 1-5 -- outfile.pdf</code></li>
+<li>拆分pdf的简单方法是用内置pdf浏览器打印到pdf文件！</li>
+</ul>
+<h3 id="_21">浏览器</h3>
+<p>Firefox 主力可同步，Chrome 备用</p>
+<h4 id="telegram">浏览器无法打开telegram 链接</h4>
+<p><code>~/.local/share/applications</code> 找到 userapp-Telegram Desktop-xxxx.desktop ,在文件的最后添加一行：</p>
+<p><code>MimeType=application/x-xdg-protocol-tg;x-scheme-handler/tg;</code></p>
+<h3 id="rss">RSS</h3>
+<p><a href="https://lzone.de/liferea/">Liferea</a> 信息摄入主要来源</p>
+<h3 id="_22">下载</h3>
+<p>wget  / <a href="https://github.com/iawia002/lux">lux-dl</a> / youtube-dl / qbittorrent  / <a href="https://github.com/mayswind/AriaNg">AriaNg</a></p>
+<h3 id="_23">即时通讯</h3>
+<p>微信，统信 UOS 版有小问题，也可以chrome，用下面命令开一个独立窗口</p>
+<p><code>google-chrome-stable --new-window --app=https://wx.qq.com</code></p>
+<h3 id="_24">网盘</h3>
+<p>坚果云打开后白屏，按照<a href="https://blog.zhullyb.top/2021/10/02/nutstore-guide-on-archlinux-kde/">这里的提示</a>，执行：</p>
+<p><code>sudo sed -i 's|webui.enable=true|webui.enable=false|' /opt/nutstore/conf/nutstore.properties</code></p>
+<p>2022.5 坚果云会默认安装轻应用，会自动关联md格式，已放弃。改用 Syncthing</p>
+<h3 id="syncthing">Syncthing</h3>
+<ul>
+<li>安装 syncthing 或 syncthing-gtk ，多个PC和手机同步文件夹</li>
+<li>加入服务： <code>sudo systemctl enable syncthing@laodu.service</code></li>
+<li>启动服务： <code>sudo systemctl start syncthing@laodu.service</code></li>
+</ul>
+<h3 id="ssh-and-git">SSH and git</h3>
+<ul>
+<li>安装 openssh git</li>
+<li>创建本地ssh key：<code>ssh-keygen -t rsa -C "youremail@example.com"</code></li>
+<li>复制 <code>~.ssh/id_rsa.pub</code> 内容到github-Account settings-SSH Keys，Title随意</li>
+<li>配置git，参考：https://www.runoob.com/w3cnote/git-guide.html</li>
+</ul>
+<h2 id="_25">其他问题</h2>
+<h4 id="_26">环境变量</h4>
+<p>编辑 <code>~/.bashrc</code>，加入 <code>export PATH=$PATH:/somepath</code></p>
+<h4 id="_27">电源休眠</h4>
+<p>编辑： /etc/systemd/logind.conf 加入以下两行，实现笔记本合盖挂起系统：</p>
+<pre><code>HandleLidSwitch=suspend
+HandleLidSwitchExternalPower=suspend
+</code></pre>
+<p>然后执行：<code>systemctl restart systemd-logind</code></p>
+<p>使用xfce后默认锁屏是xfce4-screensaver，调用 xflock4，黑屏无提示。卸载掉 xfce4-screensaver ，安装 </p>
+<p><code>sudo pacman -S light-locker</code>
+<code>yay light-locker-settings</code></p>
+<p>然后在 设置&gt;配置编辑器&gt;xfce4-session&gt;general&gt;LockCommand 加入</p>
+<p><code>light-locker-command --lock</code></p>
+<p>则可以使用 ctrl+alt +L 锁定，返回 lightdm登录界面。可以安装 lightdm-gtk-greeter-settings 进一步美化登录界面。</p>
+<h4 id="_28">错误</h4>
+<p>!!! 问题，关闭笔记本盖子再打开，屏幕会出现</p>
+<h1 id="srcxfpm-powerc436">: ../src/xfpm-power.c:436</h1>
+<p>msgid ""
+"None of the screen lock tools ran successfully, the screen will not be locked.\n"
+"Do you still want to continue to suspend the system?"
+msgstr "嘿，所有锁屏工具都不能正常运行呢，所以我就无法锁定屏幕啦。\n您想继续挂起系统么？"</p>
+<p>edit <code>/usr/bin/xflock4</code></p>
+<h4 id="telegram_1">Telegram无法输入中文</h4>
+<ul>
+<li>编辑 ~/.local/share/applications/telegramdesktop.desktop</li>
+<li>在命令部分前面加入 <code>env QT_IM_MODULE=fcitx</code></li>
+<li>重新打开菜单快捷方式</li>
+</ul>
+<h2 id="_29">结语</h2>
+<p>奥卡姆剃刀原则说：如无必要、勿增实体。够用好用，还要怎样？</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.douban.com/people/metaldudu" target="_blank" rel="noopener" title="www.douban.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M.51 3.06h22.98V.755H.51V3.06Zm20.976 2.537v9.608h-2.137l-1.669 5.76H24v2.28H0v-2.28h6.32l-1.67-5.76H2.515V5.597h18.972Zm-5.066 9.608H7.58l1.67 5.76h5.501l1.67-5.76ZM18.367 7.9H5.634v5.025h12.733V7.9Z"/></svg>
+    </a>
+  
+    
+    
+      
+    
+    
+    
+      
+      
+    
+    <a href="https://m.cmx.im/@metaldudu" target="_blank" rel="noopener me" title="m.cmx.im" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/metaldudu" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+    
+  </body>
+</html>
