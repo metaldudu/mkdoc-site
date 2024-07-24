@@ -24,6 +24,7 @@
 ## 扩展
 
 - uBlock Origin - 广告过滤，简中环境无法安装
+	- 此扩展会导致 google drive 变成离线模式，关闭即可
 - uBlacklist - 屏蔽特定网站搜索结果
 - [Dark Reader](https://darkreader.org/) - 相对好用的暗色模式切换
 - [CopyTabTitleUrl](https://addons.mozilla.org/en-US/firefox/addon/copytabtitleurl/) - 拷贝markdown格式的URL
@@ -34,3 +35,4 @@
 ## 其他技巧
 
 - 对于某些不允许复制的网站，可以打开阅读模式（ctrl + alt + r）
+- 

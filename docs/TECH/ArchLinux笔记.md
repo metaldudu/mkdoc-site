@@ -3,7 +3,7 @@ title: Arch linux 笔记
 date: 2022-12-04
 ---
 
-# Arch linux 笔记
+# Archlinux笔记
 
 ## 系统安装
 

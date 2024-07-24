@@ -3,6 +3,7 @@ tags: software
 create: 2023-11-01
 update: 
 ---
+# Linux软件推荐
 
 ## System
 
@@ -46,7 +47,7 @@ update:
 - [Tor Browser](https://www.torproject.org/) - 匿名浏览器
 - [Telegram](https://telegram.org/) - 通信
 - [qBittorrent](https://www.qbittorrent.org/) - BT和磁力下载，支持web管理
-- [aria2](https://github.com/aria2/aria2) - 下载 🖥）
+- [aria2](https://github.com/aria2/aria2) - 下载 🖥
 	- [AriaNg](https://github.com/mayswind/AriaNg) - aria2 的 web 前端
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp) - youtube 视频下载 🖥
 - [Lux](https://github.com/iawia002/lux) - bilibili 等网站视频下载 🖥

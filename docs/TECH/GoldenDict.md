@@ -59,7 +59,7 @@ Longman Dictionary of Contemporary English，例句都有发音，英英解释�
 ### 20240619 update
 
 - dict字典收集下载 https://downloads.freemdict.com/
-
+- 深色主题 https://github.com/yozhic/GoldenDict-Full-Dark-Theme/
 
 ---
 

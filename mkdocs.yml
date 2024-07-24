@@ -49,6 +49,47 @@ extra:
 # 导航
 
 nav:
+  - REPOST:
+    - index: REPOST/index.md
+    - 能量管理而非时间管理: REPOST/能量管理而非时间管理.md
+    - 这鸡蛋真难吃: REPOST/这鸡蛋真难吃.md
+    - 三个问题: REPOST/三个问题.md
+    - 贾樟柯：做了一个汉奸梦: REPOST/贾樟柯：做了一个汉奸梦.md
+    - 爱丁堡笑话: REPOST/爱丁堡笑话.md
+    - 余光中：怎样改进英式中文: REPOST/余光中：怎样改进英式中文.md
+    - 张五常：思考的方法: REPOST/张五常：思考的方法.md
+    - 兰迪波许最后的演讲: REPOST/兰迪波许最后的演讲.md
+    - 苏联笑话: REPOST/苏联笑话.md
+    - 查理·芒格在南加州大学毕业典礼上的演讲: REPOST/查理·芒格在南加州大学毕业典礼上的演讲.md
+    - 周保松：走进生命的学问: REPOST/周保松：走进生命的学问.md
+    - 宫泽贤治：不畏风雨: REPOST/宫泽贤治：不畏风雨.md
+    - 德鲁克：管理自己: REPOST/德鲁克：管理自己.md
+    - 查理·芒格：人类误判心理: REPOST/查理·芒格：人类误判心理.md
+    - 乔布斯2005年在斯坦福大学的演讲: REPOST/乔布斯2005年在斯坦福大学的演讲.md
+    - 温家宝：我的母亲: REPOST/温家宝：我的母亲.md
+    - 茅于轼：教育的目的是什么: REPOST/茅于轼：教育的目的是什么.md
+    - 五祖法演讲的禅宗故事: REPOST/五祖法演讲的禅宗故事.md
+    - 王小波：工作与人生: REPOST/王小波：工作与人生.md
+    - 王晓明：这样的人多了社会坏不到哪里去: REPOST/王晓明：这样的人多了社会坏不到哪里去.md
+    - 亚伦·斯沃茨：怎样有效利用时间: REPOST/亚伦·斯沃茨：怎样有效利用时间.md
+    - 没人懂某国: REPOST/没人懂某国.md
+    - 劳东燕：直面真实的世界: REPOST/劳东燕：直面真实的世界.md
+    - 曾奇峰：我所犯过的错误: REPOST/曾奇峰：我所犯过的错误.md
+    - 秦晖：30 年、60 年、120 年——中国历史的延续与断裂: REPOST/秦晖：30 年、60 年、120 年——中国历史的延续与断裂.md
+    - 秦晖：关于文革的若干问题: REPOST/秦晖：关于文革的若干问题.md
+    - 芒格：请先投资你自己: REPOST/芒格：请先投资你自己.md
+    - 艾柯：-人类为什么爱清单: REPOST/艾柯：-人类为什么爱清单.md
+    - 何伟：“中国制造”外交的兴起: REPOST/何伟：“中国制造”外交的兴起.md
+    - 俞敏洪：度过有意义的生命: REPOST/俞敏洪：度过有意义的生命.md
+    - 城市生存手记：一个波斯尼亚人的内战生活总结: REPOST/城市生存手记：一个波斯尼亚人的内战生活总结.md
+    - 许章润-我们当下的恐惧与期待: REPOST/许章润-我们当下的恐惧与期待.md
+    - KK的68条人生建议: REPOST/KK的68条人生建议.md
+    - 海明威谈写作: REPOST/海明威谈写作.md
+    - 吴敬琏：中国经济的未来方向: REPOST/吴敬琏：中国经济的未来方向.md
+  - LANG:
+    - index: LANG/index.md
+    - 分级阅读：黑猫有声名著: LANG/分级阅读：黑猫有声名著.md
+    - 英语听力资源: LANG/英语听力资源.md
   - GAME:
     - index: GAME/index.md
     - XBOX: GAME/XBOX.md
@@ -58,15 +99,15 @@ nav:
     - NS: GAME/NS.md
   - RES:
     - index: RES/index.md
-    - chinese-song-bpm: RES/chinese-song-bpm.md
-    - chinese-zodiac: RES/chinese-zodiac.md
+    - 影视下载网站: RES/影视下载网站.md
     - online-free-movie: RES/online-free-movie.md
-    - free-fonts: RES/free-fonts.md
-    - ebook-website: RES/ebook-website.md
-    - movie-website: RES/movie-website.md
-    - 🍊more-websites: RES/🍊more-websites.md
-    - things-to-buy: RES/things-to-buy.md
-    - good-habits: RES/good-habits.md
+    - 性价比物品收集: RES/性价比物品收集.md
+    - 中文歌曲bpm: RES/中文歌曲bpm.md
+    - 🍊网站搜罗: RES/🍊网站搜罗.md
+    - 天干地支: RES/天干地支.md
+    - 免费字体: RES/免费字体.md
+    - 电子书下载网站: RES/电子书下载网站.md
+    - 好习惯收集: RES/好习惯收集.md
   - READ:
     - index: READ/index.md
     - NEA票选100本儿童书: READ/NEA票选100本儿童书.md
@@ -80,53 +121,45 @@ nav:
     - 卡内基奖: READ/卡内基奖.md
     - 纽伯瑞奖: READ/纽伯瑞奖.md
     - 十年阅读计划: READ/十年阅读计划.md
-  - K:
-    - index: K/index.md
-    - MOOC-美国文化: K/MOOC-美国文化.md
-    - celebrity-and-morden-china: K/celebrity-and-morden-china.md
-    - learning-how-to-learn: K/learning-how-to-learn.md
-    - justice: K/justice.md
-    - criminal-law: K/criminal-law.md
-    - chinese-novel: K/chinese-novel.md
-    - tan-jing: K/tan-jing.md
-    - europe-history: K/europe-history.md
-    - game-psychology: K/game-psychology.md
-    - fav-ted-talks: K/fav-ted-talks.md
-  - MOVIE:
-    - index: MOVIE/index.md
-    - 比利·怀德: MOVIE/比利·怀德.md
-    - 库布里克: MOVIE/库布里克.md
-    - 伊斯特伍德: MOVIE/伊斯特伍德.md
-    - 查理·考夫曼: MOVIE/查理·考夫曼.md
+  - COURSE:
+    - index: COURSE/index.md
+    - 公正: COURSE/公正.md
+    - 我喜欢的TED演讲: COURSE/我喜欢的TED演讲.md
+    - 中国传媒大学-游戏心理学: COURSE/中国传媒大学-游戏心理学.md
+    - 刑法悖论十讲: COURSE/刑法悖论十讲.md
+    - 名人与近代中国: COURSE/名人与近代中国.md
+    - 世界华文文学经典欣赏: COURSE/世界华文文学经典欣赏.md
+    - 可汗学院欧洲史: COURSE/可汗学院欧洲史.md
+    - Learning How To Learn: COURSE/Learning How To Learn.md
+    - 美国文化: COURSE/美国文化.md
+    - 坛经: COURSE/坛经.md
   - TECH:
     - index: TECH/index.md
-    - minimalist-launchers: TECH/minimalist-launchers.md
-    - nas: TECH/nas.md
-    - 12-tips-to-manage-files: TECH/12-tips-to-manage-files.md
+    - Kobo电纸书: TECH/Kobo电纸书.md
     - Firefox浏览器: TECH/Firefox浏览器.md
+    - NAS搭建笔记: TECH/NAS搭建笔记.md
     - hotkey-cheetsheet: TECH/hotkey-cheetsheet.md
+    - 电脑文件整理的12个tips: TECH/电脑文件整理的12个tips.md
     - cmus: TECH/cmus.md
-    - ArchLinux: TECH/ArchLinux.md
-    - kobo: TECH/kobo.md
     - vimwiki: TECH/vimwiki.md
     - Obsidian: TECH/Obsidian.md
     - 小屏手机参数对比: TECH/小屏手机参数对比.md
-    - manage-downloaded-ebook: TECH/manage-downloaded-ebook.md
-    - win-software: TECH/win-software.md
-    - linux-software: TECH/linux-software.md
     - kitty: TECH/kitty.md
-    - tradition-color: TECH/tradition-color.md
-    - goldendict: TECH/goldendict.md
+    - 安卓APP推荐: TECH/安卓APP推荐.md
+    - Windows常用软件: TECH/Windows常用软件.md
     - mkdocs: TECH/mkdocs.md
     - manage-downloaded-media: TECH/manage-downloaded-media.md
-    - android-app: TECH/android-app.md
+    - 极简启动器选择: TECH/极简启动器选择.md
+    - ArchLinux笔记: TECH/ArchLinux笔记.md
+    - GoldenDict: TECH/GoldenDict.md
     - ffmpeg: TECH/ffmpeg.md
+    - 电子书相关: TECH/电子书相关.md
+    - Linux软件推荐: TECH/Linux软件推荐.md
   - WRITE:
     - index: WRITE/index.md
     - 2015: WRITE/2015.md
     - 2016: WRITE/2016.md
     - 2017: WRITE/2017.md
-
 
 
 # 
